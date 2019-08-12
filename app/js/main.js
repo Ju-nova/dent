@@ -26,7 +26,12 @@ $(function() {
       //   }
       );
 
-    
+    $('.news__slider').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  variableWidth:true
+});
     });
 $(window).on("scroll", function () {
     var scrolled = $(this).scrollTop();
