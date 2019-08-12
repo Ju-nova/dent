@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-
+ 
 	<title>Mr. Dent</title>
 
 	<link rel="stylesheet" href="css/main.min.css">
@@ -31,7 +31,7 @@
 					<ul class="main-nav__list">
 						<li><a href="#">О клинике</a></li>
 
-						<li  class="services"><a href="services.html">Услуги</a>
+						<li  class="item__services"><a href="services.html">Услуги</a>
 							
 						       <div class="submenu services__submenu">
 						       	<div class="submenu__wrapper">
@@ -118,9 +118,11 @@
 		</div>
 	</header>
     <main>
-    		<!-- <h1 class="visually-hidden"> Центр стоматологии «Mr.Dent»</h1> -->
+    		<h1 class="visually-hidden"> Центр стоматологии «Mr.Dent»</h1>
           
-           	
+        <div class="main-block">
+        	
+        </div>   	
         <section class="statistic">
          	<h2 class="statistic__title content-wrapper">Клиника в цифрах</h2>
         	  <div class="statistic__wrapper content-wrapper">
@@ -147,7 +149,9 @@
          	<h2 class="visually-hidden"> О клинике Mr.Dent</h2> 
              <div class="aboutblock__wrapper content-wrapper">
              	<div class="aboutblock__left">
-             		<iframe width="566" height="355" style="border-radius: 5px" src="https://www.youtube.com/embed/OXuIqaeg0SI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             		<div style="width: 100%; overflow: hidden;">
+             			<iframe width="100%" height="355" style="border-radius: 5px" src="https://www.youtube.com/embed/OXuIqaeg0SI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             		</div>
              		<div class="video__mask"></div>
              	</div>
              	<div class="aboutblock__right">
@@ -161,11 +165,31 @@
              		<p class="aboutblock__text">
                     Это помогает легко определить план лечения, который устроит и доктора и клиента. На первом месте в стоматологии — внимательное отношение к пациентам, забота о них и честность.
              		</p>
-             		<div>
+             		
              			<a class="button aboutblock__button" href="#">Подробнее >></a>
-             		</div>
+             		
              	</div>
              </div>
+         </section>
+
+         <section class="services">
+         	<h2  class="services__title"> Услуги компании</h2> 
+         	<div class="service__wrapper content-wrapper">
+         		<div class="service__left">
+	         		<a href="#">Консультация</a>
+	         		<a href="">Профессиональная<br> гигиена полости рта</a>
+	         		<a href="">Терапевтическая<br> стоматология</a>
+	         		<a href="">Имплантация</a>
+	         		<a href="">Ортопедическая<br> стоматология</a>
+         		</div>
+         		<div class="service__right">
+	         		<a href="#">Хирургическая стоматология</a>
+	         		<a href="">Ортодонтия</a>
+	         		<a href="">Лечение дёсен</a>
+	         		<a href="">Диагностика</a>
+	         		<a href="">Отбеливание</a>
+         		</div>
+         	</div>
          </section>
 
      <section class="promotion">

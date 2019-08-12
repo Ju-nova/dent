@@ -1,0 +1,146 @@
+.services{
+	border:1px solid transparent;
+	
+
+}
+.services__title{
+	margin:40px 0 40px;
+}
+.service__wrapper{
+	background-image:url(../../img/therapy__img.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	display: flex;
+	justify-content:space-between;
+	padding:40px 0;
+}
+.service__left a,
+.service__right a{
+	display: block;
+	font-size: 19px;
+	line-height: 24px;
+	margin:28px 0 51px;
+	text-decoration: none;
+	color: #242424;
+}
+
+
+.service__left a:hover,
+.service__right a:hover{
+text-decoration:underline;
+color: #43c7d2;
+}
+
+.service__left ,
+.service__right {
+	width:50%;
+}
+.service__left{
+	text-align: right;
+}
+.service__right a{
+	margin:28px 0 61px;
+	position:relative;
+	&:after{
+		content:'';
+		position:absolute;
+		display: block;
+		width: 74px;
+		height:74px;
+		background-repeat:no-repeat;
+		top:-20px;
+	left:-104px;
+	}
+}
+.service__left a{
+	position:relative;
+		&:before{
+		content:'';
+		position:absolute;
+		display: block;
+		width: 74px;
+		height:74px;
+		background-repeat:no-repeat;
+		top:-20px;
+	right:-104px;
+	}
+}
+.service__left a:first-child{
+	margin-right:280px;
+	&:before{
+	background-image:url(../img/round1.png);
+	
+}
+}
+.service__left a:nth-child(2){
+	margin-right:350px;
+	&:before{
+	background-image:url(../img/round2.png);
+	
+}
+}
+.service__left a:nth-child(3){
+	margin-right:380px;
+	&:before{
+	background-image:url(../img/round3.png);
+
+}
+}
+.service__left a:nth-child(4){
+	margin-right:370px;
+	margin-bottom:61px;
+	&:before{
+	background-image:url(../img/round4.png);
+	
+}
+}
+.service__left a:nth-child(5){
+	margin-right:320px;
+	&:before{
+	background-image:url(../img/round5.png);
+	top:-10px;
+	right:-104px;
+	
+}
+}
+.service__right a:first-child{
+	margin-top:35px;
+	margin-left:280px;
+	margin-bottom:55px;
+	&:after{
+	background-image:url(../img/round6.png);
+	
+}
+}
+.service__right a:nth-child(2){
+	margin-left:350px;
+		margin-bottom:70px;
+		&:after{
+	background-image:url(../img/round7.png);
+	
+}
+}
+.service__right a:nth-child(3){
+	margin-left:380px;
+	margin-bottom:75px;
+		&:after{
+	background-image:url(../img/round8.png);
+	
+}
+}
+.service__right a:nth-child(4){
+	margin-left:370px;
+margin-bottom:70px;
+		&:after{
+	background-image:url(../img/round9.png);
+	
+}
+}
+.service__right a:nth-child(5){
+	margin-left:330px;
+		&:after{
+	background-image:url(../img/round10.png);
+	top:-25px;
+	left:-124px;
+}
+}
