@@ -1231,7 +1231,7 @@ h2 {
   margin: 0 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 56px 60px 55px 44px;
+  padding: 56px 50px 55px 44px;
   border-radius: 10px;
   background-color: #fff;
   -webkit-box-shadow: 0 0 27px rgba(192, 193, 193, 0.38);
@@ -1251,6 +1251,20 @@ h2 {
 }
 .review__title {
   padding-top: 69px;
+}
+.review__data {
+  color: #878787;
+  font-size: 14px;
+  line-height: 30px;
+}
+.review__name {
+  color: #3b77ae;
+  font-size: 18px;
+  line-height: 37px;
+}
+.review__text {
+  font-size: 17px;
+  color: #242424;
 }
 .review .slick-track {
   padding: 40px 50px;
