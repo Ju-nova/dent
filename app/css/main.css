@@ -1039,12 +1039,10 @@ h2 {
 .news {
   background-color: #f2f8fa;
   border: 1px solid transparent;
+  overflow: hidden;
 }
 .news__title {
   margin-top: 47px;
-}
-.news__wrapper {
-  width: 1260px;
 }
 .news__item {
   max-width: 294px;
@@ -1091,6 +1089,7 @@ h2 {
   height: 52px;
   border-radius: 30px;
   left: -70px;
+  z-index: 7;
 }
 .news__slider .slick-next {
   background-color: #ffffff;
@@ -1139,6 +1138,196 @@ h2 {
 .news__button {
   text-align: center;
   margin-bottom: 30px;
+}
+.map {
+  position: relative;
+}
+.map__address-wrapper {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  background-color: #ffffff;
+  padding: 10px;
+  -webkit-box-shadow: 0 0 43px rgba(0, 0, 0, 0.13);
+          box-shadow: 0 0 43px rgba(0, 0, 0, 0.13);
+  border-radius: 10px;
+}
+.map__address {
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+}
+.map__logo {
+  text-align: center;
+  margin-top: 23px;
+}
+.map__text {
+  padding: 42px 34px 58px 99px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+.map__text p {
+  margin: 0;
+  margin-bottom: 42px;
+  position: relative;
+}
+.map__text p:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: -5px;
+  left: -60px;
+}
+.map__text p a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+.map__text p a:hover {
+  text-decoration: underline;
+  color: #43c7d2;
+}
+.map__text .map__tel a {
+  font-size: 20px;
+}
+.map__text .map__work {
+  margin-bottom: 0;
+}
+.map__text .map__street:before {
+  width: 45px;
+  height: 49px;
+  background-image: url(../img/icon_location_footer.png);
+}
+.map__text .map__tel:before {
+  left: -65px;
+  width: 54px;
+  height: 48px;
+  background-image: url(../img/icon_tel.png);
+}
+.map__text .map__mail:before {
+  width: 44px;
+  height: 47px;
+  background-image: url(../img/icon_mail.png);
+}
+.map__text .map__work:before {
+  width: 44px;
+  height: 47px;
+  background-image: url(../img/icon_time2.png);
+}
+.review {
+  background-color: #f2f8fa;
+  overflow: hidden;
+}
+.review__item {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 780px;
+  height: 283px;
+  margin: 0 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 56px 60px 55px 44px;
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 27px rgba(192, 193, 193, 0.38);
+          box-shadow: 0 0 27px rgba(192, 193, 193, 0.38);
+}
+.review__av {
+  margin-right: 40px;
+  width: 172px;
+  height: 172px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.review__av img {
+  width: 172px;
+  height: 172px;
+}
+.review__title {
+  padding-top: 69px;
+}
+.review .slick-track {
+  padding: 40px 50px;
+}
+#review .review__wrapper {
+  overflow: hidden;
+  padding: 40px 0;
+  max-width: 1920px;
+}
+#review .slick-slide {
+  opacity: 0.5;
+}
+#review .slick-center {
+  opacity: 1;
+}
+.review__button {
+  text-align: center;
+  padding-bottom: 60px;
+}
+#review .slick-prev {
+  background-color: #f2f8fa;
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  left: 330px;
+  z-index: 1;
+}
+#review .slick-next {
+  background-color: #f2f8fa;
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  right: 330px;
+  z-index: 1;
+}
+#review .slick-prev:before,
+#review .slick-next:before {
+  content: '';
+}
+#review .slick-prev:after {
+  background-color: #ffffff;
+  display: block;
+  width: 52px;
+  height: 52px;
+  border-radius: 50px;
+  left: 330px;
+  z-index: 5;
+}
+.review .slick-prev:before {
+  content: '';
+  color: black;
+  display: block;
+  width: 8px;
+  height: 8px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  position: relative;
+  left: 23px;
+}
+#review .slick-next:before {
+  content: '';
+  color: black;
+  display: block;
+  width: 8px;
+  height: 8px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  position: relative;
+  right: -20px;
 }
 .footer__up {
   padding: 40px 0;

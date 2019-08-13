@@ -37,6 +37,17 @@ $(function() {
 
 
 });
+
+ $('.review__wrapper').slick({
+  centerMode: true,
+  // centerPadding: '60px',
+  slidesToShow: 1,
+  variableWidth:true,
+  arrows:false,
+  autoplay:true
+  
+  
+});   
     });
 $(window).on("scroll", function () {
     var scrolled = $(this).scrollTop();
