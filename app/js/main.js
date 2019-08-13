@@ -30,7 +30,12 @@ $(function() {
   infinite: true,
   slidesToShow: 4,
   slidesToScroll: 1,
-  variableWidth:true
+  // variableWidth:true,
+  focusOnSelect:true
+  // centerMode: true,
+// centerPadding: '30px'
+
+
 });
     });
 $(window).on("scroll", function () {
