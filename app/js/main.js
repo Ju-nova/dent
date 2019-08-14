@@ -62,14 +62,29 @@ $(function() {
   autoplaySpeed:5000,
   cssEase: 'linear'
 
-
-  
 }); 
- 
-  var slider = $('.sl-fb');
+ var slider = $('.sl-fb');
   $('.sl-count__total').text( slider.slick("getSlick").slideCount);
   $(".sl-fb").on('afterChange', function(event, slick, currentSlide){
        $(".sl-count__num").text(currentSlide + 1);
+  });
+
+   $('.main-block__slider').slick({
+
+  fade:true,
+  slidesToShow: 1,
+  arrows:true,
+  autoplay:false,
+  speed:500,
+  
+  autoplaySpeed:5000,
+ 
+
+}); 
+  var slider = $('.sl-mb');
+  $('.sl-count__total__main').text( slider.slick("getSlick").slideCount);
+  $(".sl-mb").on('afterChange', function(event, slick, currentSlide){
+       $(".sl-count__num__main").text(currentSlide + 1);
   });
     });
 $(window).on("scroll", function () {
