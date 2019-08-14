@@ -47,7 +47,30 @@ $(function() {
   autoplay:true
   
   
-});   
+});  
+
+  $('.personal__slider').slick({
+
+   centerMode: true,
+   centerPadding: '60px',
+  slidesToShow: 3,
+  variableWidth:true,
+  arrows:true,
+  autoplay:true,
+  speed:500,
+   lazyLoad: 'profressive',
+  autoplaySpeed:5000,
+  cssEase: 'linear'
+
+
+  
+}); 
+ 
+  var slider = $('.sl-fb');
+  $('.sl-count__total').text( slider.slick("getSlick").slideCount);
+  $(".sl-fb").on('afterChange', function(event, slick, currentSlide){
+       $(".sl-count__num").text(currentSlide + 1);
+  });
     });
 $(window).on("scroll", function () {
     var scrolled = $(this).scrollTop();
