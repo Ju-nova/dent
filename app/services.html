@@ -2,8 +2,8 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
 	<title>Mr. Dent</title>
 
     <link rel="stylesheet" href="css/normalize.css">
@@ -11,115 +11,119 @@
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/main.min.css"></head>
 <body class="body">
-
-	<header class="header ">
-		<div class="header__first  content-wrapper">
-			<div class="header__first-logo">
-                <a href="index.html">
-				   <img class="logo1 " src="img/logo_desktop.png" width="110" height="95" alt="Логотип">
-				   <img class="logo2 none" src="img/logo_desktop.png" width="77" height="67" alt="Логотип">
-				</a>   
-			</div>
-			<div class="header__first-middle">
-				<div class="header__first-work">
-					<div class="header__first-address">
-						г. Воронеж, ул.Название, д.1, оф.2
-					</div>
-					<div class="header__first-hours">
-						Часы работы: с 8.00 до 20.00 (Пн.-Сб.)
-					</div>
-				</div>
-
-				<nav class="main-nav">
-					<ul class="main-nav__list">
-						<li><a href="#">О клинике</a></li>
-
-						<li class="item__services"><a href="#">Услуги</a>
-							
-						       <div class="submenu services__submenu">
-						       	<div class="submenu__wrapper">
-							       	<ul class="submenu__list">
-								       	<li class="submenu__list-item">Консультация</li>
-								       	<li class="submenu__list-item submenu__list-item--current"><a data-toggle="tab" href="#gigiena">Профессиональная гигиена полости рта</a>
-								        </li>
-								       	<li class="submenu__list-item"><a data-toggle="tab" href="#therapy">Терапевтическая стоматология</a></li>
-								       	<li class="submenu__list-item">Имплантация</li>
-								       	<li class="submenu__list-item">Ортопедическая стоматология</li>
-								       	<li class="submenu__list-item">Хирургическая стоматология</li>
-								       	<li class="submenu__list-item">Ортодонтия</li>
-								       	<li class="submenu__list-item">Лечение дёсен</li>
-								       	<li class="submenu__list-item">Диагностика</li>
-								       	<li class="submenu__list-item">Отбеливание</li>
-								     </ul>
-
-
-								     <div class="submenu-2">
-								       <ul id="gigiena" class="submenu-2__list   active">
-										       	<li class="submenu-2__list-item" ><a data-toggle="block" href="#uzi">Ультразвуковая чистка</a>
-										       		
-										       	</li >
-										       	<li class="submenu-2__list-item airflow"><a data-toggle="block" class="airflow" href="#airflow">Ультразвуковая чистка + AirFlow</a>
-										   
-										       		</li>
-								            </ul>
-								             <ul id="therapy" class="submenu-2__list">
-										       	<li class="submenu-2__list-item"><a href="#">Лечение кариеса</a></li>
-										       	<li class="submenu-2__list-item"><a href="#">Реставрация зубов</a></li>
-										       	<li class="submenu-2__list-item"><a href="#">Лечение пульпита</a></li>
-										       	<li class="submenu-2__list-item"><a href="#">Лечение периодонтита</a></li>
-
-								            </ul>
-								     </div>
-
-
-								   </div>  
-
-								    <div class="submenu-3">
-								     	
-								    	       <div id="uzi" class="submenu__block">
-										       			<img width="340" height="192" src="img/image1.png" alt="">
-										       			<p>
-									Гsdfghgjhrfghjh
-										       			</p>
-										       	</div>
-										      	
-								    	    	<div id="airflow" class="submenu__block active">
-										       			<img width="340" height="192" src="img/image1.png" alt="">
-										       			<p>
-									Гигиеническая чистка зубов Air Flow представляет собой процедуру, при которой аппарат распыляет на зубы смесь из воды, воздуха и кристаллов соды под давлением. 
-                                    <br>
-                                    <br>
-									Степень такого давления регулирует врач-стоматолог. При помощи данного прибора различные типы отложений удаляются не только с поверхности зуба, но и из межзубных промежутков.
-
-										       			</p>
-										       	</div>
-								    </div> 
-								   
-							    </div>
-						</li>
-
-						<li class="doctors"><a href="#">Врачи</a></li>
-						<li><a href="#">Цены</a></li>
-						<li><a href="#">Отзывы</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-				</nav>
-				
-			</div>
-			<div class="header__first-tel">
-					
-						<div class="header__first-number">
-							<a class="telephone" href="tel:89202253399">8 920 225 3399</a>
-						</div>
-				
-					
-						<div class="header__first-order">
-							<a href="#">Заказать звонок</a>
-						</div>
-					
-			</div>
-		</div>
-	</header>
+   <header class="header ">
+        <div class="header__first  header--closed header--no-js  content-wrapper">
+            <div class="header__first-logo">
+                <a href="#">
+                   <img class="logo1 " src="img/logo_desktop.png" width="110" height="95" alt="Логотип">
+                   <img class="logo2 none" src="img/logo_desktop.png" width="77" height="67" alt="Логотип">
+                   
+                </a>  
+                 <button class="header__toggle" id="toggle-button" type="button" aria-label="Меню"></button>  
+            </div>
+            <div class="header__tablet">
+                <div class="header__first-middle">
+                    <div class="header__first-work">
+                        <div class="header__first-address">
+                            г. Воронеж, ул.Название, д.1, оф.2
+                        </div>
+                        <div class="header__first-hours">
+                            Часы работы: с 8.00 до 20.00 (Пн.-Сб.)
+                        </div>
+                    </div>
+                
+                    <nav class="main-nav">
+                        <ul class="main-nav__list">
+                            <li><a href="#">О клинике</a></li>
+                
+                            <li  class="item__services"><a href="services.html">Услуги</a>
+                                
+                                   <div class="submenu services__submenu">
+                                    <div class="submenu__wrapper">
+                                        <ul class="submenu__list">
+                                            <li class="submenu__list-item">Консультация</li>
+                                            <li class="submenu__list-item submenu__list-item--current"><a data-toggle="tab" href="#gigiena">Профессиональная гигиена полости рта</a>
+                                            </li>
+                                            <li class="submenu__list-item"><a data-toggle="tab" href="#therapy">Терапевтическая стоматология</a></li>
+                                            <li class="submenu__list-item">Имплантация</li>
+                                            <li class="submenu__list-item">Ортопедическая стоматология</li>
+                                            <li class="submenu__list-item">Хирургическая стоматология</li>
+                                            <li class="submenu__list-item">Ортодонтия</li>
+                                            <li class="submenu__list-item">Лечение дёсен</li>
+                                            <li class="submenu__list-item">Диагностика</li>
+                                            <li class="submenu__list-item">Отбеливание</li>
+                                         </ul>
+                
+                
+                                         <div class="submenu-2">
+                                           <ul id="gigiena" class="submenu-2__list   active">
+                                                    <li class="submenu-2__list-item" ><a data-toggle="block" href="#uzi">Ультразвуковая чистка</a>
+                                                        
+                                                    </li >
+                                                    <li class="submenu-2__list-item airflow"><a data-toggle="block" class="airflow" href="#airflow">Ультразвуковая чистка + AirFlow</a>
+                                               
+                                                        </li>
+                                                </ul>
+                                                 <ul id="therapy" class="submenu-2__list">
+                                                    <li class="submenu-2__list-item"><a href="#">Лечение кариеса</a></li>
+                                                    <li class="submenu-2__list-item"><a href="#">Реставрация зубов</a></li>
+                                                    <li class="submenu-2__list-item"><a href="#">Лечение пульпита</a></li>
+                                                    <li class="submenu-2__list-item"><a href="#">Лечение периодонтита</a></li>
+                
+                                                </ul>
+                                         </div>
+                
+                
+                                       </div>  
+                
+                                        <div class="submenu-3">
+                                            
+                                                   <div id="uzi" class="submenu__block">
+                                                            <img width="340" height="192" src="img/image1.png" alt="">
+                                                            <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit accusantium qui fugiat consequatur laboriosam voluptas autem sint, asperiores possimus nostrum delectus soluta molestiae accusamus eveniet velit, dignissimos omnis in maxime!
+                                                            </p>
+                                                    </div>
+                                                    
+                                                    <div id="airflow" class="submenu__block active">
+                                                            <img width="340" height="192" src="img/image1.png" alt="">
+                                                            <p>
+                                        Гигиеническая чистка зубов Air Flow представляет собой процедуру, при которой аппарат распыляет на зубы смесь из воды, воздуха и кристаллов соды под давлением. 
+                                                    <br>
+                                                    <br>
+                                        Степень такого давления регулирует врач-стоматолог. При помощи данного прибора различные типы отложений удаляются не только с поверхности зуба, но и из межзубных промежутков.
+                
+                                                            </p>
+                                                    </div>
+                                        </div> 
+                                       
+                                    </div>
+                            </li>
+                
+                            <li class="doctors"><a href="#">Врачи</a></li>
+                            <li><a href="#">Цены</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+                <div class="header__first-tel">
+                        
+                            <div class="header__first-number">
+                                <a class="telephone" href="tel:89202253399">8 920 225 3399</a>
+                            </div>
+                    
+                        
+                            <div class="header__first-order">
+                                <a href="#">Заказать звонок</a>
+                            </div>
+                        
+                </div>
+            </div>
+        </div>
+    </header>
+	
     <main>
     	
     	<section class="consult">

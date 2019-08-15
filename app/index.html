@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
- 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
 	<title>Mr. Dent</title>
 	<link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
@@ -11,117 +12,121 @@
   </head>
 <body class="body">
 	<header class="header ">
-		<div class="header__first  content-wrapper">
+		<div class="header__first  header--closed header--no-js  content-wrapper">
 			<div class="header__first-logo">
                 <a href="#">
 				   <img class="logo1 " src="img/logo_desktop.png" width="110" height="95" alt="Логотип">
 				   <img class="logo2 none" src="img/logo_desktop.png" width="77" height="67" alt="Логотип">
-				</a>   
+				   
+				</a>  
+				 <button class="header__toggle" id="toggle-button" type="button" aria-label="Меню"></button>  
 			</div>
-			<div class="header__first-middle">
-				<div class="header__first-work">
-					<div class="header__first-address">
-						г. Воронеж, ул.Название, д.1, оф.2
+			<div class="header__tablet">
+				<div class="header__first-middle">
+					<div class="header__first-work">
+						<div class="header__first-address">
+							г. Воронеж, ул.Название, д.1, оф.2
+						</div>
+						<div class="header__first-hours">
+							Часы работы: с 8.00 до 20.00 (Пн.-Сб.)
+						</div>
 					</div>
-					<div class="header__first-hours">
-						Часы работы: с 8.00 до 20.00 (Пн.-Сб.)
-					</div>
+				
+					<nav class="main-nav">
+						<ul class="main-nav__list">
+							<li><a href="#">О клинике</a></li>
+				
+							<li  class="item__services"><a href="services.html">Услуги</a>
+								
+							       <div class="submenu services__submenu">
+							       	<div class="submenu__wrapper">
+								       	<ul class="submenu__list">
+									       	<li class="submenu__list-item">Консультация</li>
+									       	<li class="submenu__list-item submenu__list-item--current"><a data-toggle="tab" href="#gigiena">Профессиональная гигиена полости рта</a>
+									        </li>
+									       	<li class="submenu__list-item"><a data-toggle="tab" href="#therapy">Терапевтическая стоматология</a></li>
+									       	<li class="submenu__list-item">Имплантация</li>
+									       	<li class="submenu__list-item">Ортопедическая стоматология</li>
+									       	<li class="submenu__list-item">Хирургическая стоматология</li>
+									       	<li class="submenu__list-item">Ортодонтия</li>
+									       	<li class="submenu__list-item">Лечение дёсен</li>
+									       	<li class="submenu__list-item">Диагностика</li>
+									       	<li class="submenu__list-item">Отбеливание</li>
+									     </ul>
+				
+				
+									     <div class="submenu-2">
+									       <ul id="gigiena" class="submenu-2__list   active">
+											       	<li class="submenu-2__list-item" ><a data-toggle="block" href="#uzi">Ультразвуковая чистка</a>
+											       		
+											       	</li >
+											       	<li class="submenu-2__list-item airflow"><a data-toggle="block" class="airflow" href="#airflow">Ультразвуковая чистка + AirFlow</a>
+											   
+											       		</li>
+									            </ul>
+									             <ul id="therapy" class="submenu-2__list">
+											       	<li class="submenu-2__list-item"><a href="#">Лечение кариеса</a></li>
+											       	<li class="submenu-2__list-item"><a href="#">Реставрация зубов</a></li>
+											       	<li class="submenu-2__list-item"><a href="#">Лечение пульпита</a></li>
+											       	<li class="submenu-2__list-item"><a href="#">Лечение периодонтита</a></li>
+				
+									            </ul>
+									     </div>
+				
+				
+									   </div>  
+				
+									    <div class="submenu-3">
+									     	
+									    	       <div id="uzi" class="submenu__block">
+											       			<img width="340" height="192" src="img/image1.png" alt="">
+											       			<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit accusantium qui fugiat consequatur laboriosam voluptas autem sint, asperiores possimus nostrum delectus soluta molestiae accusamus eveniet velit, dignissimos omnis in maxime!
+											       			</p>
+											       	</div>
+											      	
+									    	    	<div id="airflow" class="submenu__block active">
+											       			<img width="340" height="192" src="img/image1.png" alt="">
+											       			<p>
+										Гигиеническая чистка зубов Air Flow представляет собой процедуру, при которой аппарат распыляет на зубы смесь из воды, воздуха и кристаллов соды под давлением. 
+				                                    <br>
+				                                    <br>
+										Степень такого давления регулирует врач-стоматолог. При помощи данного прибора различные типы отложений удаляются не только с поверхности зуба, но и из межзубных промежутков.
+				
+											       			</p>
+											       	</div>
+									    </div> 
+									   
+								    </div>
+							</li>
+				
+							<li class="doctors"><a href="#">Врачи</a></li>
+							<li><a href="#">Цены</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+					
 				</div>
-
-				<nav class="main-nav">
-					<ul class="main-nav__list">
-						<li><a href="#">О клинике</a></li>
-
-						<li  class="item__services"><a href="services.html">Услуги</a>
-							
-						       <div class="submenu services__submenu">
-						       	<div class="submenu__wrapper">
-							       	<ul class="submenu__list">
-								       	<li class="submenu__list-item">Консультация</li>
-								       	<li class="submenu__list-item submenu__list-item--current"><a data-toggle="tab" href="#gigiena">Профессиональная гигиена полости рта</a>
-								        </li>
-								       	<li class="submenu__list-item"><a data-toggle="tab" href="#therapy">Терапевтическая стоматология</a></li>
-								       	<li class="submenu__list-item">Имплантация</li>
-								       	<li class="submenu__list-item">Ортопедическая стоматология</li>
-								       	<li class="submenu__list-item">Хирургическая стоматология</li>
-								       	<li class="submenu__list-item">Ортодонтия</li>
-								       	<li class="submenu__list-item">Лечение дёсен</li>
-								       	<li class="submenu__list-item">Диагностика</li>
-								       	<li class="submenu__list-item">Отбеливание</li>
-								     </ul>
-
-
-								     <div class="submenu-2">
-								       <ul id="gigiena" class="submenu-2__list   active">
-										       	<li class="submenu-2__list-item" ><a data-toggle="block" href="#uzi">Ультразвуковая чистка</a>
-										       		
-										       	</li >
-										       	<li class="submenu-2__list-item airflow"><a data-toggle="block" class="airflow" href="#airflow">Ультразвуковая чистка + AirFlow</a>
-										   
-										       		</li>
-								            </ul>
-								             <ul id="therapy" class="submenu-2__list">
-										       	<li class="submenu-2__list-item"><a href="#">Лечение кариеса</a></li>
-										       	<li class="submenu-2__list-item"><a href="#">Реставрация зубов</a></li>
-										       	<li class="submenu-2__list-item"><a href="#">Лечение пульпита</a></li>
-										       	<li class="submenu-2__list-item"><a href="#">Лечение периодонтита</a></li>
-
-								            </ul>
-								     </div>
-
-
-								   </div>  
-
-								    <div class="submenu-3">
-								     	
-								    	       <div id="uzi" class="submenu__block">
-										       			<img width="340" height="192" src="img/image1.png" alt="">
-										       			<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit accusantium qui fugiat consequatur laboriosam voluptas autem sint, asperiores possimus nostrum delectus soluta molestiae accusamus eveniet velit, dignissimos omnis in maxime!
-										       			</p>
-										       	</div>
-										      	
-								    	    	<div id="airflow" class="submenu__block active">
-										       			<img width="340" height="192" src="img/image1.png" alt="">
-										       			<p>
-									Гигиеническая чистка зубов Air Flow представляет собой процедуру, при которой аппарат распыляет на зубы смесь из воды, воздуха и кристаллов соды под давлением. 
-                                    <br>
-                                    <br>
-									Степень такого давления регулирует врач-стоматолог. При помощи данного прибора различные типы отложений удаляются не только с поверхности зуба, но и из межзубных промежутков.
-
-										       			</p>
-										       	</div>
-								    </div> 
-								   
-							    </div>
-						</li>
-
-						<li class="doctors"><a href="#">Врачи</a></li>
-						<li><a href="#">Цены</a></li>
-						<li><a href="#">Отзывы</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-				</nav>
-				
-			</div>
-			<div class="header__first-tel">
+				<div class="header__first-tel">
+						
+							<div class="header__first-number">
+								<a class="telephone" href="tel:89202253399">8 920 225 3399</a>
+							</div>
 					
-						<div class="header__first-number">
-							<a class="telephone" href="tel:89202253399">8 920 225 3399</a>
-						</div>
-				
-					
-						<div class="header__first-order">
-							<a href="#">Заказать звонок</a>
-						</div>
-					
+						
+							<div class="header__first-order">
+								<a href="#">Заказать звонок</a>
+							</div>
+						
+				</div>
 			</div>
 		</div>
 	</header>
     <main>
     		<h1 class="visually-hidden"> Центр стоматологии «Mr.Dent»</h1>
           
-        <div class="main-block">
+         <div class="main-block">
         	<div class="main-block__wrapper content-wrapper">
         		<div class="sl-mb  main-block__slider">
         			
@@ -153,7 +158,7 @@
         		</div>
         		<div class="sl-count__main"><span class="sl-count__num__main">1</span> / <span class="sl-count__total__main"></span></div>
         	</div>
-        </div> 
+        </div>  
 
 
         <section class="statistic">
@@ -178,7 +183,7 @@
         	</div> 
          </section> 
        
-          <section class="aboutblock">
+    <!--       <section class="aboutblock">
          	<h2 class="visually-hidden"> О клинике Mr.Dent</h2> 
              <div class="aboutblock__wrapper content-wrapper">
              	<div class="aboutblock__left">
@@ -203,8 +208,8 @@
              		
              	</div>
              </div>
-         </section>
-
+         </section> -->
+<!-- 
          <section class="services">
          	<h2  class="services__title"> Услуги компании</h2> 
          	<div class="service__wrapper content-wrapper">
@@ -226,9 +231,9 @@
          		<a href="#" class="button ">Бесплатная<br> консультация  >></a>
          	</div>
          	</div>
-         </section>
+         </section> -->
 
-		<section id="review" class="review">
+	<!-- 	<section id="review" class="review">
 			<h2 class="review__title">Отзывы клиентов</h2>
 			<div class="review__wrapper review__slider content-wrapper">
 
@@ -478,7 +483,7 @@
      <section class="map">
      	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2473.911188065897!2d39.178056215743645!3d51.679768679663745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413b25b4d7e2ae7d%3A0x8df90c1e37ffb6e8!2z0JDQutCw0LTQtdC80LjRjyDRhtCy0LXRgtC-0LI!5e0!3m2!1sru!2sru!4v1565695607768!5m2!1sru!2sru" width="100%" height="611" frameborder="0" style="border:0" allowfullscreen></iframe>
      	 <!--   <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A975fe888403aae623af6971b1ffd1d6ae826b60f7033feefe9c07ce8c3f239ef&amp;source=constructor" width="100%" height="611" frameborder="0"></iframe> -->
-     	 <div class="map__wrapper content-wrapper">
+     	<!--  <div class="map__wrapper content-wrapper">
      	 	<div class="map__address-wrapper">
      	 		<div class="map__address">
      	 			<div class="map__logo">
@@ -516,7 +521,7 @@
 							    </li>
 							     <li class="form__message">
 							      <label for="message">Сообщение</label>
-							      <!-- <input rows="3" type="text" name="message" id="message"> -->
+							     
 							      <textarea name="message" id="message" cols="30" rows="3"></textarea>
 							    </li>
 							         <li class="form__checkbox">
@@ -536,9 +541,9 @@
      		</div>
      	</div>
      </section>   	
-    </main>
-
-<footer class="footer">
+    </main> -->
+ 
+<!--  <footer class="footer">
         	<div class="footer__up">
         		<div class="content-wrapper ">
 		        		
@@ -653,7 +658,7 @@
 
              </div>   
         	</div>
-        </footer>	
+        </footer>	 -->
 		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/jquery-migrate-3.0.1.min.js"></script>
 		<script src="js/slick.js"></script> 
