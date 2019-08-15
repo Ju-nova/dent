@@ -2,10 +2,22 @@
 	height: 711px;
     margin-top: -121px;
     background-image:url(../img/background1.png);
-    
+    z-index:-1;
 }
 .main-block__wrapper{
   position:relative;
+  &:after{
+  	content:'';
+  	display: block;
+  	position:absolute;
+  	width:94px;
+  	height:94px;
+  	background-image:url(../img/mouse.png);
+  	background-repeat:no-repeat;
+  	left:50%;
+  	bottom:-47px;
+  	margin-left:-47px;
+  }
 }	
 
 .main-block__wrapper .sl-count__main{

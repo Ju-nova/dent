@@ -59,6 +59,10 @@ input[type="radio"].visually-hidden {
           box-shadow: 0 5px 17px 0 rgba(241, 149, 173, 0.35);
   cursor: pointer;
 }
+.button:hover {
+  -webkit-box-shadow: 0 0 43px rgba(0, 0, 0, 0.13);
+          box-shadow: 0 0 43px rgba(0, 0, 0, 0.13);
+}
 .button--blue {
   border-radius: 32px;
   line-height: 19px;
@@ -83,7 +87,7 @@ input[type="radio"].visually-hidden {
   top: 0;
   position: fixed;
   background-color: #ffff;
-  z-index: 5;
+  z-index: 10;
   width: 100%;
 }
 .header__first {
@@ -106,6 +110,7 @@ input[type="radio"].visually-hidden {
       -ms-flex-align: start;
           align-items: flex-start;
   position: relative;
+  z-index: 10;
 }
 .header__scrolled .header__first {
   padding: 0px 0;
@@ -765,9 +770,22 @@ h2 {
   height: 711px;
   margin-top: -121px;
   background-image: url(../img/background1.png);
+  z-index: -1;
 }
 .main-block__wrapper {
   position: relative;
+}
+.main-block__wrapper:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 94px;
+  height: 94px;
+  background-image: url(../img/mouse.png);
+  background-repeat: no-repeat;
+  left: 50%;
+  bottom: -47px;
+  margin-left: -47px;
 }
 .main-block__wrapper .sl-count__main {
   position: absolute;
@@ -1651,6 +1669,9 @@ h2 {
   line-height: 26px;
   font-weight: 400;
 }
+.footer__menu a:hover {
+  text-decoration: underline;
+}
 .footer__menu li:not(:last-child) {
   margin-right: 100px;
 }
@@ -1682,6 +1703,9 @@ h2 {
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
+}
+.footer__block-list li a:hover {
+  text-decoration: underline;
 }
 .footer__social {
   display: -webkit-box;
@@ -1753,4 +1777,7 @@ h2 {
 .footer__right a {
   display: block;
   margin-left: 10px;
+}
+.footer__right a:hover {
+  opacity: 0.8;
 }
