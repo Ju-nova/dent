@@ -35,7 +35,7 @@ top:0;
 	display: block;
 	padding:5px 0 5px;
 	background-color:#ffff;
-	
+
 
 }
 }
@@ -190,7 +190,11 @@ text-decoration: none;
 font-weight: 400;
 color: #000000;
 position:relative;
-&:before{
+ @media (max-width:426px){
+ font-size: 18px; 
+}
+}
+.header__first-number a:before{
 content:'';
 display:block;
 position:absolute;
@@ -200,9 +204,15 @@ background-image:url(../img/icon_tel.png);
 background-repeat:no-repeat;
 left:-50px;
 top:-30%;
-}	
- 
+@media (max-width:426px){
+width:44px;
+height:38px; 
+background-size:44px 38px;
+top:-20%;
 }
+}	
+
+
 
 .header__first-order a{
 	color: #30929a;
@@ -281,7 +291,7 @@ display:block;
     &::before
     {
         position: absolute;
-        top: 10px;
+        top: 0px;
         // bottom: 20px;
         //    right: 0;
         right: 3px;
@@ -296,10 +306,18 @@ display:block;
         background-color: #42c7d2;
     box-shadow: 0 6px 0 0 #42c7d2, 0 12px 0 0 #42c7d2;
     transition:all 1s;
+
     }
     &::after
     {
         display: none;
+    }
+}
+
+ @media (min-width: 375px){
+ 	.header--closed .header__toggle::before
+    {
+    top: 0px;	
     }
 }
 
