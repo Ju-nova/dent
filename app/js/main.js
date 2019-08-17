@@ -26,17 +26,8 @@ $(function() {
       //   }
       );
 
-    $('.news__slider').slick({
-  infinite: true,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  // variableWidth:true,
-  focusOnSelect:true
-  // centerMode: true,
-// centerPadding: '30px'
+   
 
-
-});
 
  $('.review__wrapper').slick({
   centerMode: true,
@@ -56,11 +47,13 @@ $(function() {
   slidesToShow: 3,
   variableWidth:true,
   arrows:true,
-  autoplay:true,
+ // autoplay:true,
   speed:500,
    lazyLoad: 'profressive',
   autoplaySpeed:5000,
-  cssEase: 'linear'
+  cssEase: 'linear',
+
+
 
 }); 
  var slider = $('.sl-fb');
@@ -101,7 +94,62 @@ $(window).on("scroll", function () {
          $('.header').removeClass('header__scrolled');
           $('.header__first-work').removeClass('none');
     }
+
+
 });
+  $(window).on('load', function() {
+    
+     $('.news__slider').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  // variableWidth:true,
+  focusOnSelect:true,
+  // centerMode: true,
+// centerPadding: '30px'
+
+autoplay:true,
+
+ responsive: [
+    {
+      breakpoint: 1025,
+      settings: {
+        slidesToShow:3,
+        slidesToScroll: 1,
+        arrows:true
+
+      }
+    },
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow:2,
+        slidesToScroll: 1,
+        arrows:true
+
+      }
+    },
+     {
+      breakpoint: 450,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows:true
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+      
+   
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  
+  
+});
+     });
 
 
  var header = document.querySelector('.header__first');

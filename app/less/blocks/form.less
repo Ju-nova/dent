@@ -15,15 +15,30 @@ border:1px solid transparent;
 	padding:10px;
 	box-shadow: 0 0 43px rgba(0, 0, 0, 0.13);
 	border-radius: 10px;
-
+	
+	@media (max-width: 1024px){
+		margin:64px auto  61px 20px ;
+	}
+@media (max-width: 426px){
+		margin:64px auto  61px auto ;
+			width:370px;
+	}
+	@media (max-width: 376px){
+		margin:64px auto  61px auto ;
+			width:350px;
+	}
 }
 .form__fieldset{
 	border: 1px solid #dcdcdc;
 	border-radius: 10px;
 	padding:43px 34px 34px 34px;
 
-
-
+@media (max-width: 426px){
+		padding:43px 20px 20px 20px;
+	}
+@media (max-width: 376px){
+		padding:43px 10px 20px 10px;
+	}
 }
 .form__title{
 	font-size: 20px;

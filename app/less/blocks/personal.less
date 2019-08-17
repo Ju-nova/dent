@@ -61,6 +61,10 @@ color: #4bbcc5;
 #personal .slick-center   .personal__av img{
 width:188px;
 height: 188px;
+@media(max-width: 426px){
+	width:100px;
+height: 100px;
+}
 }
 
 #personal .slick-current .personal__item{
@@ -94,6 +98,11 @@ height: 188px;
 	left:45%;
 	z-index:2;
 	margin-left: -20px;
+	
+	@media(max-width: 426px){
+		margin-left: -40px;
+		margin-top: 176px;
+	}
 
 }
 #personal  .slick-next{
@@ -104,7 +113,12 @@ height: 188px;
 	right:45%;
 	margin-top: 186px;
 	z-index:2;
-	margin-right: -15px;
+	margin-right: -21px;
+	
+@media(max-width: 426px){
+		margin-right: -41px;
+		margin-top: 176px;
+	}	
 }
 #personal  .slick-prev:hover,
 #personal .slick-next:hover{
