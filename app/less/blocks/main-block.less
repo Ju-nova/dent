@@ -3,6 +3,12 @@
     margin-top: -121px;
     background-image:url(../img/background1.png);
     z-index:-1;
+ @media (max-width: 768px){
+  
+  height: auto;
+  
+	
+  	}
 }
 .main-block__wrapper{
   position:relative;
@@ -30,6 +36,18 @@
 	bottom:85px;
 	font-size: 26px;
 	color: #010101;
+	@media (max-width: 768px)
+	{
+		left:50px;
+	bottom:50px;
+	font-size: 20px;	
+	}
+	@media (max-width:426px)
+	{
+		left:50px;
+	bottom:20px;
+	font-size: 18px;	
+	}
 }
 .main-block__wrapper  .slick-prev{
 	background-color: #ffffff;
@@ -41,6 +59,17 @@
 	left:0;
 	z-index:2;
 	margin-left: 0;
+		@media (max-width: 768px)
+	{
+		width: 30px;
+	height: 30px;	
+	top:438px;
+	}
+			@media (max-width: 426px)
+	{
+		
+	top:368px;
+	}
 
 }
 .main-block__wrapper  .slick-next{
@@ -54,6 +83,18 @@
 	// margin-top: 186px;
 	z-index:2;
 	margin-right: -15px;
+	@media (max-width: 768px)
+	{
+		width: 30px;
+	height: 30px;	
+	top:438px;
+	left:95px;
+	}
+				@media (max-width: 426px)
+	{
+		
+	top:368px;
+	}
 }
 .main-block__wrapper  .slick-prev:hover,
 #personal .slick-next:hover{
@@ -74,7 +115,10 @@ content:'';
 	border-left:2px solid black;
 	border-bottom:2px solid black;
 	position:relative;
-	left:15px;
+	
+	@media (max-width: 768px){
+	left:12px;	
+	}
 }
 .main-block__wrapper  .slick-next:before{
 	content:'';
@@ -87,18 +131,41 @@ content:'';
 	border-top:2px solid black;
 	position:relative;
 	right:-15px;
+	@media (max-width: 768px){
+	right:-10px;	
+	}
 }
 .main-block__slide{
 
  	height: 711px;
- 	padding:286px 0 284px;
+ 	padding:286px 0 0 0;
  	box-sizing:border-box;
-
+ 	 @media (max-width: 768px){
+height:500px;
+	padding:240px 0 0 0;
+ }
+ 	 @media (max-width: 768px){
+height:400px;
+	padding:200px 0 0 0;
+ }
 }
 .main-block__slide1{
+	width: 100%;
  background-image:url(../img/slide1.png);	
  background-position: right 50px bottom 0 ;
  background-repeat:no-repeat;
+ @media (max-width: 768px){
+ background-size:600px auto;
+  background-position: right 0 bottom 0 ;
+ }
+  @media (max-width: 768px){
+ background-size:400px auto;
+  background-position: right 0 bottom 0 ;
+ }
+   @media (max-width: 426px){
+ background-size:400px auto;
+  background-position: right -70px bottom 0 ;
+ }
  }
 .main-block__slide2{
 	background-image:url(../img/form-image.png);	
@@ -113,8 +180,28 @@ content:'';
 .main-block__slide p{
 	font-size: 42px;
 	color: #000000;
+	@media (max-width: 1024px){
+  	font-size: 30px;	
+  	}
+  		@media (max-width: 768px){
+  	font-size: 24px;	
+  	}
+  	 		@media (max-width: 426px){
+  	font-size: 18px;	
+  	}
+  	 		@media (max-width: 426px){
+  	font-size: 16px;	
+  	}
 }
 .main-block__button a{
 	padding:22px 25px;
 	font-size: 20px;
+	@media (max-width: 768px){
+  	font-size: 16px;	
+  	padding:14px 18px;
+  	}
+  		@media (max-width: 426px){
+  	font-size: 14px;	
+  	padding:10px 10px;
+  	}
 }

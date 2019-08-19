@@ -8,7 +8,11 @@
 	text-align:center;
 	margin:0;
 	padding:0;
-	padding:0 180px 60px;
+	padding:0 70px 60px;
+	@media (max-width: 425px){
+	padding:0 20px 20px;	
+	}
+
 }
 
 .uslugi__title{
@@ -18,10 +22,13 @@
 	display: flex;
 	justify-content:space-between;
 	flex-wrap: wrap;
+	@media (max-width: 1024px){
+	justify-content: center;	
+	}
 }
 .uslugi__razdel{
 	overflow: hidden;
-height: 280px;
+min-height: 280px;
 width: 619px;
 margin-bottom:30px;
 box-shadow: 0 -1px 6px rgba(0, 58, 88, 0.1);
@@ -30,7 +37,23 @@ padding:49px 200px 18px 67px;
 box-sizing: border-box;
 background-image:url(../../img/img1.png);
 background-repeat:no-repeat;
-
+background-color:#f7f9fa;
+@media (max-width: 1025px){
+// width: 500px;
+//background-size:500px auto;	
+padding:29px 190px 10px 47px;
+width: 100%;
+background-position:right 0;
+min-height: 200px;
+}
+@media (max-width:426px){
+// width: 500px;
+//background-size:500px auto;	
+padding:29px 100px 10px 17px;
+//width:500px;
+background-position:right 0;
+min-height: 200px;
+}
 }
 .uslugi__razdel:first-child{
 background-image:url(../../img/img1.png);	
@@ -71,12 +94,41 @@ background-image:url(../../img/img9.png);
 .uslugi__razdel--wide{
 	padding:49px 365px 18px 67px;
 	width: 100%;
+	
+	@media (max-width: 1025px){
+// width: 500px;
+background-position:right 0;	
+padding:29px 190px 0px 47px;
+order:-1;
+}
+	@media (max-width: 426px){
+
+background-position:right 0 bottom 0;	
+padding:29px 10px 0px 17px;
+order:-1;
+}
 }
 .uslugi__razdel--wide .uslugi__razdel-list{
 	display: flex;
 	flex-wrap:wrap;
 	justify-content: space-between;
+
+
 }
+.uslugi__razdel--wide .uslugi__razdel-list div{
+	@media (max-width: 426px){
+		width:42%;
+	
+	}
+	
+}
+// .uslugi__razdel--wide .uslugi__razdel-list div:first-child{
+// 	@media (max-width: 426px){
+// 		margin-right:10px;
+	
+// 	}
+	
+// }
 .uslugi__razdel-list{
 	list-style:none;
 	padding:0;
@@ -96,13 +148,18 @@ background-image:url(../../img/img9.png);
     top:0;
     left:0;
 	}
+
 }
 .uslugi__razdel-list li a{
 	text-decoration:none;
 	color: #3e3e3e;
+	font-size: 16px;
 	&:hover{
 	text-decoration: underline;
 	color: #9ef1f8;	
+	}
+	@media(max-width:1024px){
+		font-size: 14px;
 	}
 }
 .uslugi__razdel-title{
