@@ -79,6 +79,16 @@ $(function() {
   $(".sl-mb").on('afterChange', function(event, slick, currentSlide){
        $(".sl-count__num__main").text(currentSlide + 1);
   });
+
+  $( ".spoiler__click" ).click(
+  function() {
+    $(this).next('.faq__answer').slideToggle(1000)
+    $(this).toggleClass('spoiler__click--open');
+  
+       $(this).next('.spoiler__text').slideToggle()
+
+  }, 
+);
     });
 $(window).on("scroll", function () {
     var scrolled = $(this).scrollTop();

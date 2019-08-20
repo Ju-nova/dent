@@ -1,0 +1,137 @@
+.spoiler{
+	background-color: #f2f8fa;
+}
+.spoiler__title{
+	padding:29px 0 51px;
+}
+.spoiler__wrapper{
+	padding:0 150px 60px;
+	@media (max-width: 768px){
+	padding:0 50px 60px;	
+	}
+@media (max-width: 426px){
+	padding:0 10px 30px;	
+	}
+	@media (max-width: 320px){
+	padding:0 0px 30px;	
+	}
+}
+.spoiler__click{
+	display:flex;
+	align-items:center;
+	padding:21px 0 21px 27px;
+	position:relative;
+    cursor:pointer;
+    @media (max-width: 320px){
+	padding:21px 0 21px 30px;
+	}
+    &:hover{
+    	opacity:0.8;
+    }
+	&:after{
+		content:'';
+		display:block;
+		position:absolute;
+		width: 45px;
+height:45px;
+border: 2px solid #45c7d2;
+border-radius:50%;
+right:17px;
+@media (max-width: 426px){
+	width: 35px;
+height:35px;	
+}
+	}
+	&:before{
+		content:'';
+		display:block;
+		position:absolute;
+		width:8px;
+	height: 8px;
+	
+	transform: rotate(-45deg);
+	border-left:2px solid #45c7d2;
+	border-bottom:2px solid #45c7d2;
+	transition:transform 1s;
+	right:37px;
+	@media (max-width: 426px){
+	right:32px;	
+}
+	}
+}
+.spoiler__click--open.spoiler__click{
+		&:before{
+	transform: rotate(135deg);
+	
+	}
+}
+.spoiler__click-number{
+	display:flex;
+	align-items:center;
+	justify-content: center;
+color: #45c8d3;
+
+text-align: center;
+// padding:14px 19px 13px 16px;
+font-size: 24px;
+font-weight: 400;
+line-height: 24px;
+margin-right:34px;
+position:relative;
+
+&:before{
+width: 44px;
+height:44px;
+content:'';
+position:absolute;
+display: block;
+border: 2px solid #45c7d2;
+border-radius:50%;	
+@media (max-width: 426px){
+	width: 34px;
+height:34px;
+}
+
+}
+@media (max-width: 426px){
+
+font-size: 20px;	
+	}
+	@media (max-width: 320px){
+
+font-size: 16px;	
+	}
+}
+.spoiler__click-name{
+	font-size: 24px;
+	padding-right:70px;
+	@media (max-width: 768px){
+	font-size: 20px;	
+	}
+	@media (max-width: 426px){
+	font-size: 16px;	
+	}
+}
+.spoiler__content{
+
+margin-bottom:11px;
+box-shadow: 0 0 27px rgba(192, 193, 193, 0.38);
+border-radius: 10px;
+background-color: #ffffff;
+
+}
+.spoiler__text{
+display: none;
+	padding:0px 70px 39px 88px;
+	font-size: 18px;
+	color: #242424;
+	line-height: 24px;
+	@media (max-width: 768px){
+	font-size: 14px;	
+	padding:0px 70px 39px 70px;
+	}
+		@media (max-width: 426px){
+	font-size: 14px;	
+	padding:0px 20px 39px 20px;
+	}
+}
