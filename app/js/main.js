@@ -27,7 +27,16 @@ $(function() {
       );
 
    
+var tabBlock = $('a[data-toggle="t1"]');
 
+  tabBlock.on('click', function() {
+    event.preventDefault();
+    $('.tab-block--active').removeClass('tab-block--active');
+    $(this).parent().toggleClass('tab-block--active');
+    var karies = $(this).attr('href');
+    $('.tab-block--current').removeClass('tab-block--current');
+    $(karies).toggleClass('tab-block--current');
+  });
 
  $('.review__wrapper').slick({
   centerMode: true,
