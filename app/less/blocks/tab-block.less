@@ -1,13 +1,13 @@
 .tab-block__wrapper{
-	padding:0 148px;
+	padding:0 148px 30px;
 	@media (max-width: 1024px){
-		padding:0 48px;
+		padding:0 48px 30px;
 	}
 	@media (max-width: 768px){
-		padding:0 18px;
+		padding:0 18px 30px;
 	}
 	@media (max-width: 426px){
-		padding:0;
+		padding:0 0 15px;
 	}
 }
 .tab-block__title{
@@ -145,6 +145,9 @@ padding:38px 72px 170px 72px;
 .tab-block__form{
 	padding:0 129px;
 	margin-top: -250px;
+	@media(max-width: 768px){
+	padding:0 50px;
+}
 @media(max-width: 426px){
 	padding:0 29px;
 }
@@ -165,6 +168,9 @@ text-align:center;
 display:flex;	
 justify-content: flex-start;
 align-items:flex-end;
+@media (max-width: 768px){
+	justify-content:space-between
+}
 @media (max-width: 426px){
 	flex-direction:column;
 	align-items: center;
@@ -176,8 +182,16 @@ align-items:flex-end;
 
 // }
 #tab-form .tab-block__form-list .form__name{
-min-width:235px;	
+width:154px;	
 margin-right: 17px;
+@media (max-width: 1024px){
+	width:120px;
+	
+}
+@media (max-width: 768px){
+	width:140px;
+	
+}
 @media (max-width: 426px){
 	width:100%;
 	margin-right: 0;
@@ -188,8 +202,16 @@ margin-right: 17px;
 }
 }
 #tab-form .tab-block__form-list .form__number {
-min-width:154px;	
+width:235px;	
 margin-right: 17px;
+@media (max-width: 1024px){
+	width:200px;
+	
+}
+@media (max-width: 768px){
+	width:170px;
+	
+}
 @media (max-width: 426px){
 	width:100%;
 	margin-right: 0;
@@ -201,4 +223,9 @@ width:auto;
 
 .tab-block__form .tab-block__form-list .form__submit-wrapper input[type=submit]{
 padding: 0 20px;
+@media (max-width: 768px){
+	font-size: 16px;
+	
+}
+
 }

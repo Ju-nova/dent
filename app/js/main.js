@@ -48,7 +48,17 @@ var tabBlock = $('a[data-toggle="t1"]');
   
   
 });  
-
+$('.column2__slider').slick({
+  fade:true,
+  slidesToShow: 1,
+  arrows:true,
+  autoplay:false,
+  speed:500,
+  dots:true,
+  autoplaySpeed:5000,
+  
+  
+});
   $('.personal__slider').slick({
 
    centerMode: true,
@@ -78,8 +88,8 @@ var tabBlock = $('a[data-toggle="t1"]');
   arrows:true,
   autoplay:false,
   speed:500,
-  
-  autoplaySpeed:5000,
+  dots:true,
+  autoplaySpeed:5000
  
 
 }); 
