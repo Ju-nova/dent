@@ -43,8 +43,10 @@ var tabBlock = $('a[data-toggle="t1"]');
   // centerPadding: '60px',
   slidesToShow: 1,
   variableWidth:true,
-  arrows:false,
-  autoplay:true
+  nextArrow: '.next',
+  prevArrow: '.prev',
+  arrows:true,
+  autoplay:false
   
   
 });  
