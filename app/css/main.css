@@ -2966,6 +2966,64 @@ h2 {
     font-size: 16px;
   }
 }
+#doctors .up__wrapper {
+  background-image: url(../../img/team.png);
+  background-repeat: no-repeat;
+  background-position: right -60px top 0;
+  padding: 70px 670px 270px 0;
+  margin-left: 175px;
+}
+@media (max-width: 1440px) {
+  #doctors .up__wrapper {
+    margin-left: 60px;
+    background-size: contain;
+  }
+}
+@media (max-width: 1024px) {
+  #doctors .up__wrapper {
+    padding: 70px 470px 70px 0;
+    margin-left: 0px;
+    background-size: 800px;
+    background-position: right 0px top 0;
+  }
+}
+@media (max-width: 768px) {
+  #doctors .up__wrapper {
+    padding: 30px 270px 60px 0;
+    background-size: 600px auto;
+  }
+}
+@media (max-width: 426px) {
+  #doctors .up__wrapper {
+    padding: 20px 90px 30px 0;
+    background-size: 350px auto;
+    background-position: right 0 center;
+  }
+}
+#doctors .up__breadcrubms {
+  margin-bottom: 98px;
+}
+@media (max-width: 768px) {
+  #doctors .up__breadcrubms {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 426px) {
+  #doctors .up__breadcrubms {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 376px) {
+  #doctors .up__breadcrubms {
+    opacity: 0;
+  }
+}
+@media (max-width: 376px) {
+  #doctors .up__text1,
+  #doctors .up__text2 {
+    opacity: 0;
+  }
+}
 .reasons {
   background-color: #f2f8fa;
 }
@@ -4036,6 +4094,34 @@ h2 {
   background-image: -o-linear-gradient(bottom, #31a9b3 0%, #90e3ec 100%);
   background-image: linear-gradient(to top, #31a9b3 0%, #90e3ec 100%);
   content: '';
+}
+.doctors-wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 1620px;
+  margin: 0 auto;
+  padding-right: 5px!important;
+  padding-left: 5px!important;
+}
+@media (max-width: 1024px) {
+  .doctors-wrapper {
+    max-width: 1024px;
+  }
+}
+@media (max-width: 768px) {
+  .doctors-wrapper {
+    max-width: 768px;
+  }
+}
+@media (max-width: 426px) {
+  .doctors-wrapper {
+    max-width: 425px;
+  }
+}
+@media (max-width: 320px) {
+  .doctors-wrapper {
+    max-width: 320px;
+  }
 }
 .footer__up {
   overflow: hidden;
