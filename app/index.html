@@ -34,9 +34,9 @@
 				
 					<nav class="main-nav">
 						<ul class="main-nav__list">
-							<li><a href="#">О клинике</a></li>
+							<li class="main-nav__list-item"><a href="#">О клинике</a></li>
 				
-							<li  class="item__services"><a href="services.html">Услуги</a>
+							<li  class="item__services hover-shadow"><a href="services.html">Услуги</a>
 								
 							       <div class="submenu services__submenu">
 							       	<div class="submenu__wrapper">
@@ -107,10 +107,10 @@
 								    </div>
 							</li>
 				
-							<li class="doctors"><a href="vrachi.html">Врачи</a></li>
-							<li><a href="#">Цены</a></li>
-							<li><a href="#">Отзывы</a></li>
-							<li><a href="#">Контакты</a></li>
+							<li class="doctors main-nav__list-item"><a href="vrachi.html">Врачи</a></li>
+                            <li class="main-nav__list-item"><a href="#">Цены</a></li>
+                            <li class="main-nav__list-item"><a href="#">Отзывы</a></li>
+                            <li class="main-nav__list-item"><a href="#">Контакты</a></li>
 						</ul>
 					</nav>
 					
@@ -213,7 +213,7 @@
                     Это помогает легко определить план лечения, который устроит и доктора и клиента. На первом месте в стоматологии — внимательное отношение к пациентам, забота о них и честность.
              		</p>
              		
-             			<a class="button aboutblock__button" href="#">Подробнее >></a>
+             			<a class="button button--pink aboutblock__button" href="#">Подробнее >></a>
              		
              	</div>
              </div>
@@ -237,7 +237,7 @@
 	         		<a href="">Отбеливание</a>
          		</div>
          		<div class="services__button">
-         		<a href="#" class="button ">Бесплатная<br> консультация  >></a>
+         		<a href="#" class="button button--blue">Бесплатная<br> консультация  >></a>
          	</div>
          	</div>
          </section> 
@@ -263,8 +263,9 @@
 
 				<div>
 					<div class="review__item">
+						<div class="prev"></div>
 						<div class="review__av">
-							<div class="prev"></div>
+							
 							<img width="172" height="172" src="img/client__avatar1.png" alt="">
 						</div>
 						<div class="review__text">
@@ -279,8 +280,9 @@
 
 				<div>
 					<div class="review__item">
+						<div class="prev"></div>
 						<div class="review__av">
-							<div class="prev"></div>
+							
 							<img width="172" height="172" src="img/client__avatar1.png" alt="">
 						</div>
 						<div class="review__text">
@@ -294,8 +296,9 @@
 
 				<div>
 					<div class="review__item">
+						<div class="prev"></div>
 						<div class="review__av">
-							<div class="prev"></div>
+							
 							<img width="172" height="172" src="img/client__avatar1.png" alt="">
 						</div>
 						<div class="review__text">
@@ -309,16 +312,19 @@
 				</div>
 			</div>
 			<div class="review__button">
-				<a href="#" class="button">Все отзывы >></a>
+				<a href="#" class="button button--pink">Все отзывы >></a>
 			</div>
 		</section>
        
         <section id="personal" class="personal">
+        	<div class="prev"></div>
+        	<div class="next"></div>
         	<h2 class="personal__title">Наши специалисты</h2>
-        	<div class="sl-fb personal__wrapper personal__slider content-wrapper">
+        	<div class="sl-fb personal__wrapper personal__slider ">
         		
         		<div>
         			<div class="personal__item">
+
         				<div class="personal__av">
         					<img width="77" height="77" src="img/ava_vrach.png" alt="">
         				</div>
@@ -427,7 +433,7 @@
         				</div>
         			</div>
 
-
+                   
         		</div>
         	<div class="sl-count"><span class="sl-count__num">1</span> / <span class="sl-count__total"></span></div>
 
@@ -484,7 +490,7 @@
          		
          	</div>
          	<div class="news__button">
-         		<a href="#" class="button ">Все новости</a>
+         		<a href="#" class="button button--pink">Все новости</a>
          	</div>
          </section>
      <section class="promotion">

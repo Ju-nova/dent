@@ -64,15 +64,16 @@ $('.column2__slider').slick({
   $('.personal__slider').slick({
 
    centerMode: true,
-   centerPadding: '60px',
-  slidesToShow: 3,
+   centerPadding: '0',
+  slidesToShow: 2,
   variableWidth:true,
   arrows:true,
  // autoplay:true,
   speed:500,
-   lazyLoad: 'profressive',
+   lazyLoad: 'progressive',
   autoplaySpeed:5000,
   cssEase: 'linear',
+  
 
 
 
