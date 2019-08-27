@@ -191,6 +191,14 @@
 
     justify-content: center;
 }
+.form__list li input:hover,
+textarea:hover
+{
+    box-shadow: 0 0 7px rgba(53, 175, 192, .5);
+    border: 1px solid #45c7d2;
+    cursor: pointer;
+}
+
 .form__submit-wrapper input[type='submit']
 {
     padding: 15px 25px 18px 25px;
@@ -214,13 +222,7 @@
     }
     &:hover
     {
-        box-shadow: 0 0 43px rgba(0,0,0,.3);
+        border:none;
+       box-shadow: 0 0 43px rgba(68,199,210,.35)
     }
-}
-input:hover,
-textarea:hover
-{
-    box-shadow: 0 0 7px rgba(53, 175, 192, .5);
-
-    cursor: pointer;
 }

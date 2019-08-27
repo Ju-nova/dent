@@ -38,6 +38,34 @@ var tabBlock = $('a[data-toggle="t1"]');
     $(karies).toggleClass('tab-block--current');
   });
 
+//модалка-видео
+
+   $('.simplebox').simplebox({
+        overlay: {
+            color: 'rgba(0, 0, 0, 0.8)',
+            opacity: 0.7
+        },
+        onOpen: function(obj){console.log('onOpen', obj);},
+        afterOpen: function(obj){console.log('afterOpen', obj);},
+        onClose: function(obj){console.log('onClose', obj);},
+        afterClose: function(obj){console.log('afterClose', obj);}
+    });
+
+//     $('.simplebox-overlay').click(function() {
+
+//    location.reload();
+
+// });
+     var iFrame= $('#if');
+     $('.simplebox-overlay').on('click', function() {
+    $('.modal').hide();
+    $('#if').remove();
+     $('.modal').append(iFrame);
+  });
+   // $('.simplebox').on('click', function() {
+   //   $('.modal').append('#if');
+   // })
+
  $('.review__wrapper').slick({
   centerMode: true,
   // centerPadding: '60px',
@@ -57,7 +85,7 @@ $('.column2__slider').slick({
   autoplay:false,
   speed:500,
   dots:true,
-  autoplaySpeed:5000,
+  autoplaySpeed:5000
   
   
 });

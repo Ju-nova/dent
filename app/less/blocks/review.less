@@ -1,8 +1,11 @@
 .review
 {
-    overflow: hidden;;
+    overflow: hidden;
 
     background-color: #f2f8fa;
+    &--white{
+     background-color: #fff;   
+    }
 }
 
 .review__item
@@ -138,7 +141,7 @@
     }
 }
 
-#review .slick-slide .prev
+.review .slick-slide .prev
 {
     opacity: 0;
     z-index: 1;
@@ -161,7 +164,7 @@
 opacity:1;
 cursor: pointer;
 }
-#review .slick-slide .next
+.review .slick-slide .next
 {
     opacity: 0;
     z-index: 1;
@@ -176,8 +179,41 @@ cursor: pointer;
     background-color: #ffffff;
     right:-38px;
 }
-
-
+.review.review--white .slick-slide .next
+{
+    opacity: 0;
+    z-index: 1;
+   top:50%;
+    position: absolute;
+    margin-top:-38px;
+    width: 77px;
+    height: 77px;
+    box-sizing:border-box;
+    border:13px solid #ffff;
+    border-radius: 50px;
+    background-color: #ffffff;
+    right:-38px;
+     box-shadow: 0 0 27px rgba(192, 193, 193, .38);
+}
+.review.review--white .slick-slide .prev
+{
+    opacity: 0;
+    z-index: 1;
+   top:50%;
+    position: absolute;
+    margin-top:-38px;
+    width: 77px;
+    height: 77px;
+    box-sizing:border-box;
+    border:13px solid #fff;
+    border-radius: 50px;
+    background-color: #ffffff;
+    left:-38px;
+     box-shadow: 0 0 27px rgba(192, 193, 193, .38);
+    @media (max-width: 1024px){
+    // left:8%;   
+    }
+}
 #review .prev:before,
 #review .next:before,
 #review .prev:after,

@@ -1,5 +1,7 @@
-.map
-{
+.map__wrapper
+{ 
+    max-width: 1920px;
+    margin:0 auto;
     position: relative;
 }
 .map iframe
@@ -13,13 +15,17 @@
 {
     position: absolute;
     top: 60px;
-    right: 60px;
-
-    padding: 10px;
-
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 0 43px rgba(0, 0, 0, .13);
+    left: 130px;
+     overflow:hidden;
+   // padding: 10px;
+     box-sizing:border-box;
+     width:435px;
+     height: 546px;
+     background-image:url('../../img/map-address.png');
+     background-size:cover;
+    // border-radius: 10px;
+    // background-color: #fff;
+    // box-shadow: 0 0 43px rgba(0, 0, 0, .13);
     @media (max-width:768px)
     {
         display: none;
@@ -29,6 +35,25 @@
 {
     border: 1px solid #dcdcdc;
     border-radius: 10px;
+   
+    width:331px;
+    height: 456px;
+    margin-left:44px;
+    margin-top:45px;
+    // &:after{
+    // content:'';
+    // position:absolute;
+    // display:block;
+    // width:50px;
+    // height: 260px;
+    // background-repeat:no-repeat;
+    // background-image:url(../img/tringle.png);
+
+    // top:50%;
+    // margin-top:-130px;
+    // right:-70px;
+     
+   // }
 }
 .map__logo
 {
@@ -41,7 +66,7 @@
     padding: 42px 34px 58px 99px;
 
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
 
     color: #000;
 }
@@ -67,7 +92,7 @@
 .map__text p a
 {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: none;
 
     color: #000;

@@ -196,10 +196,10 @@
          	<h2 class="visually-hidden"> О клинике Mr.Dent</h2> 
              <div class="aboutblock__wrapper content-wrapper">
              	<div class="aboutblock__left">
-             		<div style="width: 100%; overflow: hidden;">
-             			<iframe width="100%" height="355" style="border-radius: 5px" src="https://www.youtube.com/embed/OXuIqaeg0SI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-             		</div>
-             		<div class="video__mask"></div>
+             		
+             		<a class="simplebox" href="#modal01">
+             			<div class="video__mask"></div>
+             		</a>
              	</div>
              	<div class="aboutblock__right">
              		<h2 class="aboutblock__title"> О клинике Mr.Dent</h2>
@@ -217,6 +217,8 @@
              		
              	</div>
              </div>
+              <div id="modal01" class="modal">
+        	<iframe id="if" width="600" height="400" style="border-radius: 5px" src="https://www.youtube.com/embed/OXuIqaeg0SI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
          </section> 
 
          <section class="services">
@@ -317,8 +319,7 @@
 		</section>
        
         <section id="personal" class="personal">
-        	<div class="prev"></div>
-        	<div class="next"></div>
+        
         	<h2 class="personal__title">Наши специалисты</h2>
         	<div class="sl-fb personal__wrapper personal__slider ">
         		
@@ -502,9 +503,10 @@
      </section>
       
      <section class="map">
-     	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2473.911188065897!2d39.178056215743645!3d51.679768679663745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413b25b4d7e2ae7d%3A0x8df90c1e37ffb6e8!2z0JDQutCw0LTQtdC80LjRjyDRhtCy0LXRgtC-0LI!5e0!3m2!1sru!2sru!4v1565695607768!5m2!1sru!2sru" width="100%" height="611" frameborder="0" style="border:0" allowfullscreen></iframe>
-     	 <!--   <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A975fe888403aae623af6971b1ffd1d6ae826b60f7033feefe9c07ce8c3f239ef&amp;source=constructor" width="100%" height="611" frameborder="0"></iframe> -->
-     	 <div class="map__wrapper content-wrapper">
+     	<div class="map__wrapper ">
+  
+     	   <iframe src="https://yandex.ua/map-widget/v1/?um=constructor%3Acba5c5b98d71d61f9a1f93de3f46fdfd168eefd035f476d9b3540980e95e312d&amp;source=constructor" width="100%" height="611" frameborder="0"></iframe>
+     	 
      	 	<div class="map__address-wrapper">
      	 		<div class="map__address">
      	 			<div class="map__logo">
@@ -680,9 +682,13 @@
              </div>   
         	</div>
         </footer>
+
+       
+        </div>
 		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/jquery-migrate-3.0.1.min.js"></script>
 		<script src="js/slick.js"></script> 
+		<script src="js/jquery.simplebox.min.js"></script> 
 		<script src="js/main.js"></script> 
 			
 </body>
