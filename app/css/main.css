@@ -1030,6 +1030,7 @@ h2 {
   }
 }
 .uslugi__razdel {
+  position: relative;
   overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1060,6 +1061,28 @@ h2 {
     background-position: right 0;
   }
 }
+.uslugi__razdel:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(68, 199, 210, 0.7);
+  content: '';
+}
+.uslugi__razdel:hover:after {
+  opacity: 1;
+}
+.uslugi__razdel:hover .uslugi__razdel-list li a,
+.uslugi__razdel:hover .uslugi__razdel-title {
+  color: #fff;
+}
+.uslugi__razdel:hover .uslugi__razdel-list li a:hover {
+  z-index: 4;
+  text-decoration: underline;
+  color: #9ef1f8;
+}
 .uslugi__razdel:first-child {
   background-image: url(../img/img1.png);
 }
@@ -1067,7 +1090,8 @@ h2 {
   background-image: url(../img/img2.png);
 }
 .uslugi__razdel:nth-child(3) {
-  background-image: url(../img/img2.png);
+  background-image: url(../img/img3.png);
+  background-position: right 0;
 }
 .uslugi__razdel:nth-child(4) {
   background-image: url(../img/img4.png);
@@ -1076,6 +1100,7 @@ h2 {
   background-image: url(../img/img5.png);
 }
 .uslugi__razdel:nth-child(6) {
+  background-color: rgba(247, 249, 250, 0.2);
   background-image: url(../img/img6.png);
 }
 .uslugi__razdel:nth-child(7) {
@@ -1085,7 +1110,7 @@ h2 {
   background-image: url(../img/img8.png);
 }
 .uslugi__razdel:nth-child(9) {
-  background-image: url(../img/img9.png);
+  background-image: url(../img/img-9.png);
 }
 .uslugi__razdel--wide {
   width: 100%;
@@ -1130,11 +1155,13 @@ h2 {
   }
 }
 .uslugi__razdel-list {
+  z-index: 2;
   padding: 0;
   list-style: none;
 }
 .uslugi__razdel-list li {
   position: relative;
+  z-index: 4;
   margin-bottom: 5px;
   padding-left: 30px;
 }
@@ -1149,14 +1176,15 @@ h2 {
   background-repeat: no-repeat;
   content: '';
 }
+.uslugi__razdel:hover .uslugi__razdel-list li:before {
+  background-image: url('../../img/v-white.png');
+}
 .uslugi__razdel-list li a {
+  position: relative;
+  z-index: 4;
   font-size: 16px;
   text-decoration: none;
   color: #3e3e3e;
-}
-.uslugi__razdel-list li a:hover {
-  text-decoration: underline;
-  color: #9ef1f8;
 }
 @media (max-width: 1024px) {
   .uslugi__razdel-list li a {
@@ -1164,10 +1192,12 @@ h2 {
   }
 }
 .uslugi__razdel-title {
+  position: relative;
+  z-index: 2;
   display: block;
   margin-bottom: 10px;
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 400;
   color: #101010;
 }
 .consult {
@@ -2484,7 +2514,7 @@ h2 {
           box-sizing: border-box;
   width: 435px;
   height: 546px;
-  background-image: url('../../img/map-address.png');
+  background-image: url('../img/map-address.png');
   background-size: cover;
 }
 @media (max-width: 768px) {
