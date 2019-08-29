@@ -423,7 +423,7 @@ input[type='radio'].visually-hidden {
   }
 }
 .header__scrolled .header__first {
-  padding: 5px 0 0;
+  padding: 0;
 }
 .header__first-work {
   display: -webkit-box;
