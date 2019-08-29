@@ -6,6 +6,9 @@
     &--white{
      background-color: #fff;   
     }
+    @media (max-width:426px){
+        display:none;
+    } 
 }
 
 .review__item
@@ -23,11 +26,19 @@
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 0 27px rgba(192, 193, 193, .38);
+     @media (max-width: 768px)
+    {
+        width: 680px;
+        padding: 39px 76px 46px 67px;
+      
+        
+    }
     @media (max-width: 426px)
     {
         width: 380px;
         height: auto;
         padding: 10px;
+
     }
 }
 .review__av
@@ -115,6 +126,10 @@
 .review  .slick-track
 {
     padding: 40px 50px;
+    @media (max-width: 768px)
+    {
+         padding: 40px 50px 31px;
+    }
 }
 #review .review__wrapper
 {
@@ -135,6 +150,10 @@
     padding-bottom: 54px;
 
     text-align: center;
+      @media (max-width: 768px)
+    {
+        padding-bottom: 30px;
+    }
     @media (max-width: 426px)
     {
         padding-bottom: 30px;

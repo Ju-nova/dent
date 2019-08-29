@@ -50,21 +50,14 @@ var tabBlock = $('a[data-toggle="t1"]');
         onClose: function(obj){console.log('onClose', obj);},
         afterClose: function(obj){console.log('afterClose', obj);}
     });
-
-//     $('.simplebox-overlay').click(function() {
-
-//    location.reload();
-
-// });
+//при закрытии модалки останавливать и видео
      var iFrame= $('#if');
      $('.simplebox-overlay').on('click', function() {
     $('.modal').hide();
     $('#if').remove();
      $('.modal').append(iFrame);
   });
-   // $('.simplebox').on('click', function() {
-   //   $('.modal').append('#if');
-   // })
+ 
 
  $('.review__wrapper').slick({
   centerMode: true,
@@ -167,7 +160,7 @@ $(window).on("scroll", function () {
   // centerMode: true,
 // centerPadding: '30px'
 
-autoplay:true,
+autoplay:false,
 
  responsive: [
     {
@@ -175,25 +168,31 @@ autoplay:true,
       settings: {
         slidesToShow:3,
         slidesToScroll: 1,
-        arrows:true
+        arrows:true,
+        centerPadding: '60px'
 
       }
     },
     {
       breakpoint: 769,
       settings: {
-        slidesToShow:2,
+        centerMode: true,
+        variableWidth:true,
+        slidesToShow:1,
         slidesToScroll: 1,
         arrows:true
+        
 
       }
     },
      {
       breakpoint: 450,
       settings: {
+        centerMode: false,
+        variableWidth:false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows:true
+        arrows:false
       }
     }
     // You can unslick at a given breakpoint now by adding:
