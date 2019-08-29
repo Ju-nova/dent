@@ -13,13 +13,52 @@
 <body class="body">
 	<header class="header ">
 		<div class="header__first  header--closed header--no-js  content-wrapper">
+			 <div class="header__modal-overlay">
+				 	<div class="header__modal">
+				 	
+				 		<div class="header__modal__back-wrapper">
+				 			<button type="button"  class="header__modal-toggle" aria-label="Назад"></button><div class="header__modal__back">В главное меню</div></div>
+				 		<div class="header__modal-menu">
+				 			<ul>
+				 					<li><a href="#">Консультация</a></li>
+				 					<li><a href="#">Профессиональная гигиена полости рта  </a></li>
+				 					<li><a href="#">Терапевтическая стоматология</a></li>
+				 					<li><a href="#">Имплантация</a></li>
+				 					<li><a href="#">Ортопедическая стоматология</a></li>
+				 					<li><a href="#">Хирургическая стоматология</a></li>
+				 					<li><a href="#">Ортодонтия</a></li>
+				 					<li><a href="#">Лечение дёсен</a></li>
+				 					<li><a href="#">Диагностика</a></li>
+				 					<li><a href="#">Отбеливание</a></li>
+				 				</ul>
+				 		</div>
+				 	</div>
+				 </div>
 			<div class="header__first-logo">
                 <a href="#">
-				   <img class="logo1 " src="img/logo_desktop.png" width="110" height="95" alt="Логотип">
-				   <img class="logo2 none" src="img/logo_desktop.png" width="77" height="67" alt="Логотип">
+				   <img class="logo1 " src="img/logo.svg" width="110" height="95" alt="Логотип">
+				   <img class="logo2 none" src="img/logo.svg" width="77" height="67" alt="Логотип">
 				   
-				</a>  
-				 <button class="header__toggle" id="toggle-button" type="button" aria-label="Меню"></button>  
+				</a> 
+				
+					<div class="header__second header__first-address">
+							г. Воронеж,<br> ул.Название, д.1, оф.2
+						</div>
+						<div class="header__second header__first-tel">
+						
+							<div class="header__first-number">
+								<a class="telephone" href="tel:89202253399">8 920 225 3399</a>
+							</div>
+					
+						
+							<div class="header__first-order">
+								<a href="#">Заказать звонок</a>
+							</div>
+						
+				
+				</div>
+				 <button class="header__toggle" id="toggle-button" type="button" aria-label="Меню"> </button>  
+				
 			</div>
 			<div class="header__tablet">
 				<div class="header__first-middle">
@@ -133,7 +172,7 @@
     <main>
     		<h1 class="visually-hidden"> Центр стоматологии «Mr.Dent»</h1>
           
-         <div class="main-block">
+         <section class="main-block">
         	<div class="main-block__wrapper content-wrapper">
         		<div class="sl-mb  main-block__slider">
         			
@@ -141,7 +180,7 @@
         		           	<div class="main-block__slide main-block__slide1">
         		           		
         		   <p>Бесплатная консультация <br>и план лечения</p>
-        		                   <div class="main-block__button"><a href="#" class="button button--blue">Записаться >></a></div>
+        		                   <div class="main-block__button"><a href="#" class="button button--blue">Записаться <span>>></span></a></div>
         		
         		           	</div>
         		           </div>
@@ -149,7 +188,7 @@
         		           	<div class="main-block__slide main-block__slide2">
         		           		
         		   <p>Далеко-далеко	 <br>за высокими горами</p>
-        		                   <div class="main-block__button"><a href="#" class="button button--blue">Звонок >></a></div>
+        		                   <div class="main-block__button"><a href="#" class="button button--blue">Звонок <span>>></span></a></div>
         		
         		           	</div>
         		           </div>
@@ -157,7 +196,7 @@
         		           	<div class="main-block__slide main-block__slide3">
         		           		
         		   <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.</p>
-        		                   <div class="main-block__button"><a href="#" class="button button--blue">Консультация >></a>
+        		                   <div class="main-block__button"><a href="#" class="button button--blue">Консультация <span>>></span></a>
         		                   </div>
         		
         		           	</div>
@@ -165,7 +204,7 @@
         		</div>
         		<div class="sl-count__main"><span class="sl-count__num__main">1</span> / <span class="sl-count__total__main"></span></div>
         	</div>
-        </div>  
+        </section>  
 
 
         <section class="statistic">
@@ -193,7 +232,7 @@
          </section> 
        
           <section class="aboutblock">
-         	<h2 class="visually-hidden"> О клинике Mr.Dent</h2> 
+         	<h2 class="aboutblock__title aboutblock__title--tablet"> О клинике Mr.Dent</h2> 
              <div class="aboutblock__wrapper content-wrapper">
              	<div class="aboutblock__left">
              		
@@ -202,7 +241,7 @@
              		</a>
              	</div>
              	<div class="aboutblock__right">
-             		<h2 class="aboutblock__title"> О клинике Mr.Dent</h2>
+             		<h2 class="aboutblock__title  aboutblock__title--desktop"> О клинике Mr.Dent</h2>
              		<p class="aboutblock__text">
              			Все сотрудники «Клиники»- профессионалы и единомышленники. 
              		</p>
@@ -213,7 +252,7 @@
                     Это помогает легко определить план лечения, который устроит и доктора и клиента. На первом месте в стоматологии — внимательное отношение к пациентам, забота о них и честность.
              		</p>
              		
-             			<a class="button button--pink aboutblock__button" href="#">Подробнее >></a>
+             			<a class="button button--pink aboutblock__button" href="#">Подробнее <span>>></span></a>
              		
              	</div>
              </div>
@@ -339,7 +378,7 @@
 				</div>
 			</div>
 			<div class="review__button">
-				<a href="#" class="button button--pink">Все отзывы >></a>
+				<a href="#" class="button button--pink">Все отзывы <span>>></span></a>
 			</div>
 		</section>
        
@@ -358,7 +397,7 @@
         					<p class="personal__name">Светлана Иванова <br> <span class="personal__spec">стоматолог</span></p>
         					<div class="personal__slide-block">
         						<div class="personal__button">
-        							<a href="#" class="button button--blue">Записаться >></a>
+        							<a href="#" class="button button--blue">Записаться <span>>></span></a>
         						</div>
         						<div class="personal__link">
         							<a href="#">Информация о враче <span>>></span></a>
@@ -376,7 +415,7 @@
         						<p class="personal__name">Светлана Иванова <br> <span class="personal__spec">стоматолог</span></p>
         						<div class="personal__slide-block">
         							<div class="personal__button">
-        								<a href="#" class="button button--blue">Записаться >></a>
+        								<a href="#" class="button button--blue">Записаться <span>>></span></a>
         							</div>
         							<div class="personal__link">
         								<a href="#">Информация о враче</a>
@@ -394,7 +433,7 @@
         						<p class="personal__name">Светлана Иванова <br> <span class="personal__spec">стоматолог</span></p>
         						<div class="personal__slide-block">
         							<div class="personal__button">
-        								<a href="#" class="button button--blue">Записаться >></a>
+        								<a href="#" class="button button--blue">Записаться <span>>></span></a>
         							</div>
         							<div class="personal__link">
         								<a href="#">Информация о враче<span>>></span></a>
@@ -412,7 +451,7 @@
         						<p class="personal__name">Светлана Иванова <br> <span class="personal__spec">стоматолог</span></p>
         						<div class="personal__slide-block">
         							<div class="personal__button">
-        								<a href="#" class="button button--blue">Записаться >></a>
+        								<a href="#" class="button button--blue">Записаться <span>>></span></a>
         							</div>
         							<div class="personal__link">
         								<a href="#">Информация о враче<span>>></span></a>
@@ -430,7 +469,7 @@
         						<p class="personal__name">Светлана Иванова <br> <span class="personal__spec">стоматолог</span></p>
         						<div class="personal__slide-block">
         							<div class="personal__button">
-        								<a href="#" class="button button--blue">Записаться >></a>
+        								<a href="#" class="button button--blue">Записаться <span>>></span></a>
         							</div>
         							<div class="personal__link">
         								<a href="#">Информация о враче<span>>></span></a>
@@ -449,7 +488,7 @@
         						
         						<div class="personal__slide-block">
         							<div class="personal__button">
-        								<a href="#" class="button button--blue">Записаться >></a>
+        								<a href="#" class="button button--blue">Записаться <span>>></span></a>
         							</div>
         							<div class="personal__link">
         								<a href="#">Информация о враче<span>>></span></a>
@@ -526,7 +565,7 @@
          		
          	</div>
          	<div class="news__button">
-         		<a href="#" class="button button--pink">Все новости >></a>
+         		<a href="#" class="button button--pink">Все новости <span>>></span></a>
          	</div>
          </section>
      <section class="promotion">

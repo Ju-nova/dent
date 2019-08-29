@@ -13,13 +13,52 @@
 <body class="body">
    <header class="header ">
         <div class="header__first  header--closed header--no-js  content-wrapper">
+             <div class="header__modal-overlay">
+                    <div class="header__modal">
+                    
+                        <div class="header__modal__back-wrapper">
+                            <button type="button"  class="header__modal-toggle" aria-label="Назад"></button><div class="header__modal__back">В главное меню</div></div>
+                        <div class="header__modal-menu">
+                            <ul>
+                                    <li><a href="#">Консультация</a></li>
+                                    <li><a href="#">Профессиональная гигиена полости рта  </a></li>
+                                    <li><a href="#">Терапевтическая стоматология</a></li>
+                                    <li><a href="#">Имплантация</a></li>
+                                    <li><a href="#">Ортопедическая стоматология</a></li>
+                                    <li><a href="#">Хирургическая стоматология</a></li>
+                                    <li><a href="#">Ортодонтия</a></li>
+                                    <li><a href="#">Лечение дёсен</a></li>
+                                    <li><a href="#">Диагностика</a></li>
+                                    <li><a href="#">Отбеливание</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                 </div>
             <div class="header__first-logo">
                 <a href="#">
-                   <img class="logo1 " src="img/logo_desktop.png" width="110" height="95" alt="Логотип">
-                   <img class="logo2 none" src="img/logo_desktop.png" width="77" height="67" alt="Логотип">
+                   <img class="logo1 " src="img/logo.svg" width="110" height="95" alt="Логотип">
+                   <img class="logo2 none" src="img/logo.svg" width="77" height="67" alt="Логотип">
                    
-                </a>  
-                 <button class="header__toggle" id="toggle-button" type="button" aria-label="Меню"></button>  
+                </a> 
+                
+                    <div class="header__second header__first-address">
+                            г. Воронеж,<br> ул.Название, д.1, оф.2
+                        </div>
+                        <div class="header__second header__first-tel">
+                        
+                            <div class="header__first-number">
+                                <a class="telephone" href="tel:89202253399">8 920 225 3399</a>
+                            </div>
+                    
+                        
+                            <div class="header__first-order">
+                                <a href="#">Заказать звонок</a>
+                            </div>
+                        
+                
+                </div>
+                 <button class="header__toggle" id="toggle-button" type="button" aria-label="Меню"> </button>  
+                
             </div>
             <div class="header__tablet">
                 <div class="header__first-middle">
@@ -46,7 +85,7 @@
                                             </li>
                                             <li class="submenu__list-item"><a data-toggle="tab" href="#therapy">Терапевтическая стоматология</a></li>
                                             <li  class="submenu__list-item"><a data-toggle="tab" href="#implant" >Имплантация</a></li>
-                                            <li class="submenu__list-item"><a data-toggle="tab" href="#ortoped">Ортопедическая стоматология</a></li>
+                                            <li class="submenu__list-item"><a href="#ortoped">Ортопедическая стоматология</a></li>
                                             <li class="submenu__list-item">Хирургическая стоматология</li>
                                             <li class="submenu__list-item">Ортодонтия</li>
                                             <li class="submenu__list-item">Лечение дёсен</li>
@@ -65,7 +104,7 @@
                                                         </li>
                                                 </ul>
                                                  <ul id="therapy" class="submenu-2__list">
-                                                    <li class="submenu-2__list-item"><a href="#">Лечение кариеса</a></li>
+                                                    <li class="submenu-2__list-item"><a href="lechenie_zubov.html">Лечение кариеса</a></li>
                                                     <li class="submenu-2__list-item"><a href="#">Реставрация зубов</a></li>
                                                     <li class="submenu-2__list-item"><a href="#">Лечение пульпита</a></li>
                                                     <li class="submenu-2__list-item"><a href="#">Лечение периодонтита</a></li>
@@ -133,7 +172,7 @@
 	
     <main>
     	
-     	<section class="consult">
+     	<section  class="consult">
     		<div class="content-wrapper consult__wrapper">
     			<div class="consult__left">
     				<ul class="breadcrumbs consult__breadcrubms">
@@ -147,7 +186,7 @@
     				</div>	
     			</div>
     			<div class="consult__right">
-    				<div class="form-wrapper consult__form">
+    				<div id="appointment" class="form-wrapper consult__form">
      			  <form action="#" method="get">
      			  	<div class="form__fieldset  consult__fieldset">
      			  		<strong class="form__title">Бесплатная консультация</strong>
@@ -169,18 +208,22 @@
 							   
 							      <textarea name="message" id="message" cols="30" rows="3"></textarea>
 							    </li>
-							         <li class="form__checkbox">
-							      
-							      <input type="checkbox" name="confidential" id="confidential" checked>
-							      <label for="confidential">Согласен с условиями <a href="#">конфиденциальности</a></label>
-							    </li>
+							       
 							    
 							    	
 							    
      			  		</ul>
-     			  		<div class="form__submit-wrapper">
-     			  			<input type="submit" value="Записаться >>">
-     			  		</div>
+     			  		<div class="form__wrap">
+                            <div class="form__checkbox">
+                                                              
+                              <input type="checkbox" name="confidential" id="confidential" checked>
+                               <label for="confidential">Согласен с условиями <a href="#">конфиденциальности</a></label>
+                            </div>
+                            <div class="form__submit-wrapper">
+                                <input type="submit" value="Записаться >>">
+                            </div>
+                        </div>
+                    </div>
      			  	</div>
      			  </form>
      		</div>
@@ -299,7 +342,7 @@
      </section>
 
 
- <section class="form">
+ <section id="appointment" class="form">
      	<div class=" content-wrapper">
      		<div class="form-wrapper">
      			  <form action="" method="get">

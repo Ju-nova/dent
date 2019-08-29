@@ -1,8 +1,8 @@
 .button
 {
     display: inline-block;
-    padding: 15px 25px 18px;
-
+    padding: 15px 45px 18px 27px;
+    position:relative;
     font-size: 20px;
     text-decoration: none;
 
@@ -15,9 +15,9 @@
     }
     @media (max-width: 426px)
     {
-        padding: 10px 20px 13px;
+        //padding: 10px 20px 13px;
 
-        font-size: 12px;
+        //font-size: 12px;
     }
    
 }
@@ -36,7 +36,7 @@
 .button--blue
 {
     display: inline-block;
-    padding: 19px 25px ;
+    //padding: 19px 25px ;
 
     font-size: 16px;
     line-height: 19px;
@@ -60,4 +60,13 @@
     {
         box-shadow: 0 0 43px rgba(68,199,210,.4);
     }
+}
+.button span{
+    display:inline-block;
+   right:15px;
+   position:absolute;
+   top:16px;
+   @media(max-width: 768px){
+    right:20px;
+   }
 }
