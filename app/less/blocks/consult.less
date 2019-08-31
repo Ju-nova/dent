@@ -1,11 +1,11 @@
 .consult
 {
-    background-image: url('../img/form-image2.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image:url('../img/form-image2.png'), url(../img/background1.png) ;
+    background-repeat: no-repeat, repeat;
+    background-position: center, left;
     @media (max-width: 768px)
     {
-        background-position: top 0 left 30%;
+        background-position: top 0 left 30%, left;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -ms-background-size: cover;
@@ -24,7 +24,7 @@
     @media (max-width: 768px)
     {
         flex-direction: column;
-
+padding-bottom:20px;
         justify-content: center;
     }
 }
@@ -40,8 +40,7 @@
     box-shadow: 0 0 43px rgba(0, 0, 0, .13);
     @media (max-width: 768px)
     {
-        margin-right: auto;
-        margin-left: 0;
+        margin:auto;
     }
     @media (max-width: 426px)
     {
@@ -131,5 +130,44 @@
         margin-bottom: 20px;
 
         justify-content: flex-start;
+    }
+}
+
+.consult__contacts.consult{
+
+    background-image: url(../img/background1.png) ;
+    background-repeat:  repeat;
+    background-position:  left;
+    @media (max-width: 768px)
+    {
+        background-position: left;
+    }
+}
+
+.consult__contacts .consult__wrapper{
+    background-image:url(../img/form-image3.png);
+    background-repeat: no-repeat;
+    background-position:  left -250px bottom 0;
+    -webkit-background-size: 1329px 567px;
+    -moz-background-size: 1329px 567px;
+    -ms-background-size: 1329px 567px;
+    -o-background-size:1329px 567px;
+    background-size: 1329px 567px;
+
+@media(max-width: 1024px){
+       background-position:  left -350px bottom 0;
+       background-image:none;
+    }
+}
+
+
+.consult__contacts .consult__right{
+    @media(max-width: 1024px){
+        order:1;
+    }
+}
+.consult__contacts .consult__text{
+ @media(max-width: 768px){
+      opacity:0;
     }
 }

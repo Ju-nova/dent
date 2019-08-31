@@ -17,7 +17,7 @@
                     <div class="header__modal">
                     
                         <div class="header__modal__back-wrapper">
-                            <button  class="header__modal-toggle" aria-label="Назад"></button><div class="header__modal__back">В главное меню</div></div>
+                            <button type="button"  class="header__modal-toggle" aria-label="Назад"></button><div class="header__modal__back">В главное меню</div></div>
                         <div class="header__modal-menu">
                             <ul>
                                     <li><a href="#">Консультация</a></li>
@@ -146,10 +146,10 @@
                                     </div>
                             </li>
                 
-                            <li class="doctors main-nav__list-item"><a href="vrachi.html">Врачи</a></li>
+                            <li class="doctors main-nav__list-item"><a href="doctors.html">Врачи</a></li>
                             <li class="main-nav__list-item"><a href="#">Цены</a></li>
                             <li class="main-nav__list-item"><a href="#">Отзывы</a></li>
-                            <li class="main-nav__list-item"><a href="contacts.html">Контакты</a></li>
+                            <li class="main-nav__list-item"><a href="#">Контакты</a></li>
                         </ul>
                     </nav>
                     
@@ -170,80 +170,151 @@
         </div>
     </header>
 	
-    <main id="doctors">
+    <main>
     	
-     	    <section class="up">
-            <div class="doctors-wrapper">
-                    <div class="up__wrapper">
-                        <ul class="breadcrumbs up__breadcrubms">
-                            <li><a href="index.html">Главная <span style="color: #42c6d1;">></span></a></li>
-                            <li class="current-link"><a>Врачи</a></li>
-                            
-                        </ul>
-                        <div class="up__text">
-                            <div class="up__text1">Наша лучшая  </div><br>
-                            <div class="up__text2">Команда <br>специалистов</div>
-                           
-                        </div>  
+     	<section  class="consult  consult__contacts">
+    		<div class="content-wrapper consult__wrapper">
+    			<div class="consult__left">
+    				<ul class="breadcrumbs consult__breadcrubms">
+    					<li><a href="index.html">Главная <span style="color: #42c6d1;">></span></a></li>
+    					<li><a class="current-link">Контакты</a></li>
+    				</ul>
+    				<div class="consult__text">
+    					<div class="consult__text1">Как нас найти </div>
+    					<div class="consult__text2">Контакты</div>
+    				</div>	
+    			</div>
+    			<div class="consult__right">
+    				<div id="appointment" class="form-wrapper consult__form">
+     			  <form action="#" method="get">
+     			  	<div class="form__fieldset  consult__fieldset">
+     			  		<strong class="form__title">Бесплатная консультация</strong>
+     			  		<ul class="form__list" role="none">
+     			  			<li class="form__name">
+							      <label for="name">ФИО</label>
+							      <input required type="text" name="name" id="name">
+							    </li>
+							    <li class="form__number">
+							      <label for="number">Телефон для связи</label>
+							      <input required  type="tel" name="number" id="number">
+							    </li>
+							    <li class="form__mail">
+							      <label for="email">E-mail</label>
+							      <input required  type="email" name="email" id="email">
+							    </li>
+							     <li class="form__message">
+							      <label for="message">Сообщение</label>
+							   
+							      <textarea name="message" id="message" cols="30" rows="3"></textarea>
+							    </li>	    
+     			  		</ul>
+     			  		<div class="form__wrap">
+                            <div class="form__checkbox">
+                                                              
+                              <input type="checkbox" name="confidential" id="confidential" checked>
+                               <label for="confidential">Согласен с условиями <a href="#">конфиденциальности</a></label>
+                            </div>
+                            <div class="form__submit-wrapper">
+                                <input type="submit" value="Записаться >>">
+                            </div>
+                        </div>
                     </div>
-         </div>
-        </section> 
+     			  	</div>
+     			  </form>
+     		</div>
+    			</div>
+    		</div>
+    	</section> 
  
-          <section class="column2">
-            <h2 class="column2__title">Мы гордимся своими врачами</h2>
+         <section class="promotion promotion__contacts">
+        <h2 class="visually-hidden">Ждем вас в гости</h2>
+        <div class="content-wrapper promotion__wrapper">
+            <h2 class="promotion__title">Ждем вас в гости</h2>
+            <p class="promotion__text">Каждый пациент Центра стоматологии «Mr.Dent» — ценный гость, который получает самое качественное лечение и лучший сервис, которого достоин. Обращайтесь, рады вам помочь!</p>
+        </div>
+     </section>
+     
+
+     <section  class="column2 card-doctor column2__contacts">
+            <h2 class="visually-hidden">Карта проезда</h2>
             <div class="content-wrapper  column2__wrapper">
                 <div class="column2__left">
-                    <div class="column2__slider">
-                        <div>
-                            <div class="column2__left-slide">
-                                <img width="100%" src="img/img12.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="column2__left-slide">
-                                <img width="100%" src="img/img12.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="column2__left-slide">
-                                <img width="100%" src="img/img12.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    </div>
+                             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acbafbb3a9e04ee4ab5a1f942c4e0635e6332e83edb6abf414a526a1acb9ea373&amp;source=constructor" width="100%" height="439" frameborder="0"></iframe>
+                           <!--   <iframe src="https://yandex.ua/map-widget/v1/?um=constructor%3Acba5c5b98d71d61f9a1f93de3f46fdfd168eefd035f476d9b3540980e95e312d&amp;source=constructor" width="100%" height="439" frameborder="0"></iframe> -->
+
+                 </div>
+                  
                 <div class="column2__right">
-                    <p align="justify">В стоматологической клинике “Mr.Dent” в Воронеже мы собрали лучшую команду стоматологов. Мы проводим тщательный отбор врачей на должность. Проверяем квалификацию, опыт работы и репутацию.
-                        <br>
-                        <br>
-                    Чтобы оказывать пациентам услуги нового поколения, наши врачи постоянно повышают свою квалификацию и приобретают новые знания, посещая лекции и мастер-классы известных стоматологов.
+                 
+                    <p>Звоните сейчас</p>
                     <br>
-                    <br>
-                    Благодаря опыту и квалификации специалистов клиники в Воронеже стали доступны высококачественные услуги экстра-класса.</p>
+                       <div class="column2__tel1">  
+                         <a href="tel:89202253399">8 920 225 3399</a> 
+                       </div> <br>
+                       <div class="column2__tel2">  
+                         <a href="#">Перезвоните мне</a> 
+                       </div> <br>
+                      <p > Наш адрес:</p><br>
+                       
+                       <p style="font-size: 17px">   г.Воронеж, ул. Средне-Московская, 8</p>
+                       <br>
+                       <br>
+                       <p> Реквизиты организации:</p><br>
+                       <div class="link-download">  
+                         <a download href="#">Реквизиты ООО “Mr.Dent”</a> 
+                       </div>
                 </div>
             </div>
          </section>
-         
-         <section class="blue-block">
+
+          <section id="doctors" class="blue-block">
         <div class="content-wrapper blue-block__wrapper">
             <div class="psevdo-wrap">
-                <div class="blue__left-block">О команде</div>
+                <div class="blue__left-block">Задайте<br> вопрос врачу</div>
             </div>
-            <div class="blue__right-block">
+            <div class="blue__right-block blue__text-contacts">
                <div class="blue__right-block-img">
-                   <img src="img/ava_vrach1.png" width="190" height="190" alt="">
-                   <p>Иванов Иван Иванович</p>
+                   <img src="img/ava_vrach3.png" width="178" height="178" alt="">
+                   <p>Иванова Светлана</p>
                     
-                    <span>Главный врач клиники</span>
+                    <span>Терапевт-стоматолог</span>
                     
                </div>
-               <div class="blue__text">
-                   <p>Лучшая команда стоматологов города Воронежа всегда к вашим услугам!
-                    <br>
-                    <br>
-                    Мы стремимся оказывать качественные услуги и предоставлять максимально комфортные условия лечения. Мы создаём для своих пациентов доброжелательную и расслабляющую атмосферу. Лучшая благодарность для нас — видеть здоровые и счастливые улыбки на ваших лицах.</p>
-                   <div class="blue__link-wrapper">
-                       
-                   </div>
+               <div class="blue__text blue__text-contacts">
+                   <div id="appointment" class="">
+                  <form action="#" method="get">
+                        <ul class="form__list" role="none">
+                            <li class="form__name">
+                                  <label for="name">ФИО</label>
+                                  <input required type="text" name="name" id="name">
+                                </li>
+                                <li class="form__number">
+                                  <label for="number">Телефон для связи</label>
+                                  <input required  type="tel" name="number" id="number">
+                                </li>
+                               
+                                 <li class="form__message">
+                                  <label for="message">Сообщение</label>
+                               
+                                  <textarea required name="message" id="message" cols="30" rows="3"></textarea>
+                                </li>       
+                        </ul>
+                        <div class="form__wrap">
+                            <div class="form__checkbox">
+                                 <label for="number">Вставьте цифры с картинки</label>
+                                  <div class="g-recaptcha" data-sitekey="6LeQfnsUAAAAAAe6XhexjDnFscyI93oOL4-FZqwp"></div>
+                                 <input required type="text">                            
+                              
+                            </div>
+                            <div class="form__submit-wrapper">
+                                <input type="submit" value="Отправить >>">
+                            </div>
+                        </div>
+                    </div>
+                  
+                  </form>
+            </div>
+                
                </div>
 
             </div>
@@ -251,137 +322,30 @@
 
         </section>
 
-        <section class="reasons">
-            <div class="content-wrapper ">
-            <div class=" reasons__wrapper">
-                 <div class="">   
-                    <h2 class="reasons__title">В нашей команде только лучшие!</h2>
-                    <p class="reasons__text">Кариес относят к полиэтиологическим заболеваниям, поэтому спровоцировать его развитие могут следующие факторы:</p>   
-                    <div class="reasons__block-wrapper">
-                        <div class="reasons__left">
-                            <p class="reasons__block-text1">Многолетний опыт</p>
-                            <p class="reasons__block-text2">В нашей стоматологии работают только 
-                               сертифицированные специалисты 
-                               с опытом работы не менее 8 лет</p>
-                        </div>
-                        <div class="reasons__right">
-                            <p class="reasons__block-text1">Безупречная репутация</p>
-                             <p class="reasons__block-text2">Мастерство врачей клиники «Mr.Dent» 
-                            подтверждено тысячами положительных 
-                            отзывов от благодарных пациентов
-                        </div>      
-                    </div>
-                  </div>         
+
+         <section class="download">
+             <h2 class="download__title"> Дополнительные документы</h2>
+         
+         <div class="content-wrapper download__wrapper">
+             <div class="link-download">  
+                         <a download href="#">Сведения о графике работы медицинских работников ООО «Mr.Dent»</a> 
              </div>
-        </section>
-        
-        <section id="personal" class="personal">
-        
-            <h2 class="personal__title">Наши специалисты</h2>
-            <div class=" personal__wrapper  content-wrapper">
-                
-                
-                    <div class="personal__item">
+             <div class="link-download">  
+                         <a download href="#">Образец договора на оказание платных стоматологических услуг</a> 
+             </div>
+             <div class="link-download">  
+                         <a download href="#">Органы власти, контролирующие деятельность медицинской организации</a> 
+             </div>
+             <div class="link-download">  
+                         <a download href="#">Сведения о порядке и условиях предоставления медицинской помощи в соответствии с программой 
+и территориальной программой</a> 
+             </div>
 
-                        <div class="personal__av">
-                            <img  src="img/ava_vrach.png" alt="">
-                        </div>
-                        <div class="personal__text-wrapper">
-                            <p class="personal__name">Светлана Иванова <br> <span class="personal__spec">стоматолог</span></p>
-                           
-                                <div class="personal__button">
-                                    <a href="card-doctor.html" class="button button--blue">Подробнее <span>>></span></a>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                
-                     <div class="personal__item">
-
-                        <div class="personal__av">
-                            <img  src="img/ava_vrach2.png" alt="">
-                        </div>
-                        <div class="personal__text-wrapper">
-                            <p class="personal__name">Светлана Иванова <br> <span class="personal__spec">стоматолог</span></p>
-                           
-                                <div class="personal__button">
-                                    <a href="#" class="button button--blue">Подробнее <span>>></span></a>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="personal__item">
-
-                        <div class="personal__av">
-                            <img  src="img/ava_vrach3.png" alt="">
-                        </div>
-                        <div class="personal__text-wrapper">
-                            <p class="personal__name">Светлана Иванова <br> <span class="personal__spec">стоматолог</span></p>
-                           
-                                <div class="personal__button">
-                                    <a href="#" class="button button--blue">Подробнее <span>>></span></a>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="personal__item">
-
-                        <div class="personal__av">
-                            <img  src="img/ava_vrach4.png" alt="">
-                        </div>
-                        <div class="personal__text-wrapper">
-                            <p class="personal__name">Светлана Иванова <br> <span class="personal__spec">стоматолог</span></p>
-                           
-                                <div class="personal__button">
-                                    <a href="#" class="button button--blue">Подробнее <span>>></span></a>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="personal__item">
-
-                        <div class="personal__av">
-                            <img  src="img/ava_vrach5.png" alt="">
-                        </div>
-                        <div class="personal__text-wrapper">
-                            <p class="personal__name">Светлана Иванова <br> <span class="personal__spec">стоматолог</span></p>
-                           
-                                <div class="personal__button">
-                                    <a href="#" class="button button--blue">Подробнее <span>>></span></a>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="personal__item">
-
-                        <div class="personal__av">
-                            <img  src="img/ava_vrach6.png" alt="">
-                        </div>
-                        <div class="personal__text-wrapper">
-                            <p class="personal__name">Светлана Иванова <br> <span class="personal__spec">стоматолог</span></p>
-                           
-                                <div class="personal__button">
-                                    <a href="#" class="button button--blue">Подробнее <span>>></span></a>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                   
-                </div>
-            
-
+         </div>
+  
         </section>
 
-
-  <section id="appointment" class="form">
+ <section id="appointment" class="form">
      	<div class=" content-wrapper">
      		<div class="form-wrapper">
      			  <form action="" method="get">
@@ -405,10 +369,7 @@
 							      <!-- <input rows="3" type="text" name="message" id="message"> -->
 							      <textarea name="message" id="message" cols="30" rows="3"></textarea>
 							    </li>
-							        
-							    
-							    	
-							    
+	    
      			  		</ul>
      			  		<div class="form__wrap">
                             <div class="form__checkbox">

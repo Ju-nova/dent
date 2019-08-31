@@ -102,7 +102,7 @@
     {
         margin-right: 20px;
     }
-     @media (max-width:426px)
+    @media (max-width:426px)
     {
         margin-right: 0;
     }
@@ -118,7 +118,7 @@
     {
         font-size: 14px;
         line-height: 18px;
-        text-align:justify;
+        text-align: justify;
     }
 }
 
@@ -205,23 +205,20 @@
 
 #doctors .blue__right-block .blue__right-block-img
 {
+    display: flex;
+    flex-direction: column;
     margin-right: 50px;
 
+    align-items: center;
     flex-shrink: 0;
-    @media (max-width:1024px)
-    {
-        display: flex;
-        flex-direction: column;
 
-        align-items: center;
-    }
     @media (max-width:768px)
     {
         margin-right: 20px;
     }
     @media (max-width:426px)
     {
-        margin-right: 0px;
+        margin-right: 0;
     }
 }
 #doctors .blue__right-block img
@@ -248,5 +245,13 @@
 
 #doctors .psevdo-wrap
 {
-  margin-left:0
+    margin-left: 0;
+}
+
+
+.blue__text-contacts .form__name{
+    width:50%;
+}
+.blue__text-contacts.blue__right-block{
+    margin-right:140px; 
 }

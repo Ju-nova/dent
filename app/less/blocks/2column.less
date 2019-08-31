@@ -194,7 +194,7 @@
     width: 0;
     height: 0;
 }
-#card .column2__left
+.card-doctor .column2__left
 {
     width: 52%;
     @media (max-width: 1024px)
@@ -207,7 +207,7 @@
     }
 }
 
-#card .column2__right
+.card-doctor .column2__right
 {
     padding: 0 70px 0 90px;
     @media (max-width: 1024px)
@@ -223,12 +223,12 @@
         padding: 20px 10px 20px 10px;
     }
 }
-#card .column2__left img
+.card-doctor .column2__left img
 {
     width: 100%;
     height: auto;
 }
-#card .column2__name
+.card-doctor.column2__name
 {
     margin-bottom: 25px;
 
@@ -240,7 +240,7 @@
         display: none;
     }
 }
-#card .column2__title
+.card-doctor .column2__title
 {
     display: none;
     @media(max-width: 426px)
@@ -249,4 +249,82 @@
         padding-top: 0;
         padding-bottom: 30px;
     }
+}
+.column2__tel1 a{
+font-size: 32px;
+color: #000000;
+text-decoration:none;
+line-height: 48px;
+     @media (max-width:426px){
+       font-size: 24px;
+    }
+}
+.column2__tel2 a{
+    display: inline-block;
+
+    font-size: 17px;
+    text-decoration: none;
+
+    color: #30929a;
+    border-bottom: 1px dashed;
+    margin-bottom:25px;
+}
+.column2__contacts .column2__right{
+padding-top:55px;
+  @media (max-width:768px){
+       padding-top:0px;
+    }
+    @media (max-width:426px){
+       padding:30px 10px 30px 10px;
+    }
+
+}
+
+.column2__contacts p{
+    font-size: 20px;
+}
+
+.link-download a
+{
+    position: relative;
+
+    display: inline-block;
+    margin-left: 30px;
+
+    font-size: 17px;
+    text-decoration: none;
+
+    color: #30929a;
+    border-bottom: 1px dashed;
+    &:before
+    {
+        position: absolute;
+
+        display: block;
+        width: 23px;
+        height: 30px;
+        background-image:url(../img/pdf.svg);
+        background-size:23px 30px;
+        left:-30px;
+        top:-4px;
+
+        content: '';
+    }
+}
+
+.column2.card-doctor.column2__contacts .column2__left{
+    @media (max-width:1024px){
+        width:60%;
+    }
+       @media (max-width:768px){
+        width:50%;
+    }
+          @media (max-width:426px){
+        width:90%;
+    }
+}
+.column2__contacts .column2__left iframe{
+    @media (max-width:426px){   
+     height:200px;
+}
 }
