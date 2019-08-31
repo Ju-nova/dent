@@ -7,7 +7,6 @@
     @media(max-width: 768px)
     {
         //flex-direction: column;
-
         align-items: center;
     }
     @media(max-width: 426px)
@@ -28,26 +27,24 @@
     width: 100%;
 
     border-radius: 5px;
-
 }
 .column2__left
 {
     width: 50%;
-    flex-shrink:0;
-     @media(max-width: 768px)
+
+    flex-shrink: 0;
+    @media(max-width: 768px)
     {
-       width: 40%;
-           }
+        width: 40%;
+    }
     @media (max-width: 426px)
     {
         width: 80%;
     }
-
 }
 
 .column2__right
 {
-    
     padding: 53px 70px 0 70px;
     @media (max-width: 1024px)
     {
@@ -61,11 +58,12 @@
 
 .column2__right p
 {
+    margin: 0;
+
     font-size: 18px;
     line-height: 24px;
 
     color: #242424;
-    margin:0;
     @media (max-width: 768px)
     {
         font-size: 14px;
@@ -106,10 +104,9 @@
     }
     @media (max-width: 426px)
     {
-         margin-right: 75px;
-         right:50%;
-       
-        
+        right: 50%;
+
+        margin-right: 75px;
     }
 }
 
@@ -189,35 +186,30 @@
     content: '';
 }
 #doctors .column2__left  .slick-next:before
-
-
 {
-
     display: none;
-
 }
 #doctors .column2__left  .slick-next
 {
     width: 0;
     height: 0;
 }
-#card .column2__left{
-    width:52%;
-@media (max-width: 1024px)
+#card .column2__left
+{
+    width: 52%;
+    @media (max-width: 1024px)
     {
-       width:40%;
+        width: 40%;
     }
     @media (max-width: 426px)
     {
-       width:80%;
+        width: 80%;
     }
 }
 
- #card .column2__right
-
+#card .column2__right
 {
-
-    padding: 0px 70px 0 90px;
+    padding: 0 70px 0 90px;
     @media (max-width: 1024px)
     {
         padding: 0 20px 0 40px;
@@ -226,29 +218,35 @@
     {
         padding: 20px 40px 20px 40px;
     }
-     @media (max-width: 320px)
+    @media (max-width: 320px)
     {
         padding: 20px 10px 20px 10px;
     }
 }
- #card .column2__left img
+#card .column2__left img
 {
-   width:100%;
-   height: auto;
+    width: 100%;
+    height: auto;
 }
-#card .column2__name{
+#card .column2__name
+{
     margin-bottom: 25px;
-    color: #000;
+
     font-size: 24px;
-    @media(max-width: 426px){
-        display:none;
+
+    color: #000;
+    @media(max-width: 426px)
+    {
+        display: none;
     }
 }
-#card .column2__title{
-    display:none;
-     @media(max-width: 426px){
-        display:block;
-        padding-top:0;
-        padding-bottom:30px
+#card .column2__title
+{
+    display: none;
+    @media(max-width: 426px)
+    {
+        display: block;
+        padding-top: 0;
+        padding-bottom: 30px;
     }
 }

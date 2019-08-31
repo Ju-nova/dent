@@ -2057,12 +2057,12 @@ h2 {
 }
 @media (max-width: 426px) {
   .statistic__block {
-    width: 45%;
-    margin-left: 0;
-    text-align: left;
-    padding-left: 70px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    width: 45%;
+    margin-left: 0;
+    padding-left: 70px;
+    text-align: left;
   }
 }
 .statistic__block:before {
@@ -2098,7 +2098,7 @@ h2 {
 @media (max-width: 426px) {
   .statistic__block:first-child,
   .statistic__block:nth-child(4) {
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 38px;
     margin-left: 0;
   }
@@ -2188,9 +2188,9 @@ h2 {
   .statistic__block:nth-child(4):before {
     top: 0;
     left: 20px;
-    margin-left: 0;
     width: 37px;
     height: 35px;
+    margin-left: 0;
     background-size: 37px 35px;
     -ms-background-size: 37px 35px;
   }
@@ -2214,9 +2214,9 @@ h2 {
   #card .statistic__block:first-child:before {
     top: 0;
     left: 20px;
-    margin-left: 0;
     width: 39px;
     height: 36px;
+    margin-left: 0;
     background-size: 39px 36px;
     -ms-background-size: 39px 36px;
   }
@@ -2244,9 +2244,9 @@ h2 {
     left: 27px;
     width: 30px;
     height: 40px;
+    margin-left: 0;
     background-size: 30px 40px;
     -ms-background-size: 30px 40px;
-    margin-left: 0;
   }
 }
 #card .statistic__block:nth-child(3):before {
@@ -2270,9 +2270,9 @@ h2 {
   #card .statistic__block:nth-child(3):before {
     top: 0;
     left: 20px;
-    margin-left: 0;
     width: 40px;
     height: 36px;
+    margin-left: 0;
     background-size: 40px 36px;
     -ms-background-size: 40px 36px;
   }
@@ -5506,10 +5506,10 @@ h2 {
   }
 }
 .column2__right p {
+  margin: 0;
   font-size: 18px;
   line-height: 24px;
   color: #242424;
-  margin: 0;
 }
 @media (max-width: 768px) {
   .column2__right p {
@@ -5546,8 +5546,8 @@ h2 {
 }
 @media (max-width: 426px) {
   .column2__left .slick-next {
-    margin-right: 75px;
     right: 50%;
+    margin-right: 75px;
   }
 }
 .column2__left .slick-prev:hover,
@@ -5625,7 +5625,7 @@ h2 {
   }
 }
 #card .column2__right {
-  padding: 0px 70px 0 90px;
+  padding: 0 70px 0 90px;
 }
 @media (max-width: 1024px) {
   #card .column2__right {
@@ -5648,8 +5648,8 @@ h2 {
 }
 #card .column2__name {
   margin-bottom: 25px;
-  color: #000;
   font-size: 24px;
+  color: #000;
 }
 @media (max-width: 426px) {
   #card .column2__name {
