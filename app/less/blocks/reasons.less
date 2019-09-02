@@ -109,6 +109,25 @@
 
     content: '';
 }
+#reasons .reasons__right{
+@media(max-width: 768px){
+    display:none;
+}
+}
+#reasons .reasons__left{
+    @media (max-width: 768px){
+        width:90%;
+    }
+     @media (max-width: 426px){
+        width:95%;
+    }
+}
+#reasons .reasons__left-tablet{
+    display:none;
+    @media(max-width:768px){
+        display:block;
+    }
+}
 #doctors .reasons__left,
 #doctors .reasons__right
 {

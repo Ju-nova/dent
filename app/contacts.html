@@ -270,7 +270,8 @@
           <section id="doctors" class="blue-block">
         <div class="content-wrapper blue-block__wrapper">
             <div class="psevdo-wrap">
-                <div class="blue__left-block">Задайте<br> вопрос врачу</div>
+                <div class="blue__left-block block_desktop">Задайте<br> вопрос врачу</div>
+                <div class="blue__left-block block_tablet">Задайте вопрос врачу</div>
             </div>
             <div class="blue__right-block blue__text-contacts">
                <div class="blue__right-block-img">
@@ -299,10 +300,10 @@
                                   <textarea required name="message" id="message" cols="30" rows="3"></textarea>
                                 </li>       
                         </ul>
-                        <div class="form__wrap">
+                        <div id="captcha" class="form__wrap form__wrap-contacts">
                             <div class="form__checkbox">
-                                 <label for="number">Вставьте цифры с картинки</label>
-                                                             
+                                 <label for="captcha">Вставьте цифры с картинки</label>
+                                  <input type="text" name="captcha">                           
                               
                             </div>
                             <div class="form__submit-wrapper">

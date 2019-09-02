@@ -34,19 +34,28 @@
     // align-items: flex-start;
     position: relative;
     z-index: 10;
-padding: 19px 10px 5px;
+padding: 19px 10px 5px !important;
     display: flex;
     flex-direction: row;
     @media (max-width: 768px)
     {
         display: block;
         flex-direction: column;
-        padding: 5px 10px 5px;
+        padding: 5px 10px 5px !important;
 
         background-color:transparent;
 
         align-items: center;
     }
+}
+.header__first.content-wrapper{
+ padding: 19px 10px 5px !important;  
+  @media (max-width: 768px)
+    {
+        
+        padding: 5px 10px 5px !important;
+
+    } 
 }
 
 .header__first-logo
@@ -226,7 +235,7 @@ text-align:center;
    z-index:10;
     width: 30px;
     height: 17px;
-  margin-right:32%;
+  margin-right:33%;
     padding: 0;
     margin-top:35px;
     border: 0;
@@ -500,7 +509,7 @@ text-align:center;
     height: 28px;
     margin-right: 10px;
     padding: 0;
-    margin-top:35px;
+    margin-top:25px;
     border: 0;
     outline: none;
     background-color: transparent;

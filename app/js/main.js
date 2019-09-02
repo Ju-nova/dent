@@ -44,6 +44,9 @@ $('.header__modal-toggle').on('click',(function() {
  $('.header__first').removeClass('header--opened');
  $('.header__first').addClass('header--closed')  
 }));
+
+
+
 //модалка-видео
 
    $('.simplebox').simplebox({
