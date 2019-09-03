@@ -29,7 +29,7 @@
 .reasons__block-wrapper
 {
     display: flex;
-
+    flex-wrap:wrap;
     justify-content: space-between;
     @media (max-width: 768px)
     {
@@ -130,10 +130,11 @@
 }
 #doctors .reasons__left,
 #doctors .reasons__right
+
 {
     box-sizing: border-box;
     padding: 44px 70px 54px 80px;
-
+margin-bottom: 30px;
     @media (max-width: 1024px)
     {
         padding: 29px 80px 24px 60px;
@@ -214,4 +215,57 @@
     {
         //padding-right: 20px;
     }
+}
+#doctors .reasons__left,
+#doctors .reasons__right
+{
+    box-sizing: border-box;
+    padding: 44px 70px 54px 80px;
+
+    @media (max-width: 1024px)
+    {
+        padding: 29px 80px 24px 60px;
+    }
+
+    @media (max-width: 426px)
+    {
+        width: 95%;
+        padding: 29px 60px 24px 50px;
+    }
+     @media (max-width: 376px)
+    {
+        width: 95%;
+        padding: 29px 20px 60px 50px;
+    }
+}
+
+#doctors .reasons__left
+{
+    background-image: url(../img/teeth.png);
+    background-repeat: no-repeat;
+    background-position: right 0 bottom 0;
+    @media (max-width: 426px){
+        background-size:60px auto
+    }
+}
+#doctors .reasons__right
+{
+    background-image: url(../img/like.png);
+    background-repeat: no-repeat;
+    background-position: right 0 bottom 0;
+     @media (max-width: 426px){
+        background-size:60px auto
+    }
+}
+#doctors.reasons__company .reasons__left{
+   background-image: url(../img/tooth5.png);  
+}
+#doctors.reasons__company .reasons__right{
+   background-image: url(../img/icon-people.png);  
+}
+#doctors.reasons__company .reasons__bottom-left{
+   background-image: url(../img/tooth6.png);  
+}
+#doctors.reasons__company .reasons__bottom-right{
+   background-image: url(../img/tooth7.png);  
 }
