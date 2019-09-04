@@ -213,73 +213,101 @@
 	
     <main >
     	
-     	    <section class="up card-doctor">
-            <div class="doctors-wrapper">
-                    <div class="up__wrapper">
-                        <ul class="breadcrumbs up__breadcrubms">
-                            <li><a href="index.html">Главная <span style="color: #42c6d1;">></span></a></li>
-                            <li><a href="card-doctor.html">Врачи<span style="color: #42c6d1;">></span></a></li>
-                            <li><a>Ирина Светланова</a></li>
-                            
-                        </ul>
-                        <div class="up__text">
-                            <div class="up__text1">Наша лучшая  </div><br>
-                            <div class="up__text2">Команда <br>специалистов</div>
-                           
-                        </div>  
-                       <div class="up__button">
-                           <a href="#" class="button button--blue">Записаться на прием <span>>></span></a>
-                       </div>
+     	   <section  class="consult  consult__contacts">
+        <div class="content-wrapper consult__wrapper">
+          <div class="consult__left">
+            <ul class="breadcrumbs consult__breadcrubms">
+              <li><a href="index.html">Главная <span style="color: #42c6d1;">></span></a></li>
+              <li><a class="current-link">Контакты</a></li>
+            </ul>
+            <div class="consult__text">
+              <div class="consult__text1">Как нас найти </div>
+              <div class="consult__text2">Контакты</div>
+            </div>  
+          </div>
+          <div class="consult__right">
+            <div id="appointment" class="form-wrapper consult__form">
+            <form action="#" method="get">
+              <div class="form__fieldset  consult__fieldset">
+                <strong class="form__title">Бесплатная консультация</strong>
+                <ul class="form__list" role="none">
+                  <li class="form__name">
+                    <label for="name">ФИО</label>
+                    <input required type="text" name="name" id="name">
+                  </li>
+                  <li class="form__number">
+                    <label for="number">Телефон для связи</label>
+                    <input required  type="tel" name="number" id="number">
+                  </li>
+                  <li class="form__mail">
+                    <label for="email">E-mail</label>
+                    <input required  type="email" name="email" id="email">
+                  </li>
+                   <li class="form__message">
+                    <label for="message">Сообщение</label>
+                 
+                    <textarea name="message" id="message" cols="30" rows="3"></textarea>
+                  </li>     
+                </ul>
+                <div class="form__wrap">
+                            <div class="form__checkbox">
+                                                              
+                              <input type="checkbox" name="confidential" id="confidential" checked>
+                               <label for="confidential">Согласен с условиями <a href="#">конфиденциальности</a></label>
+                            </div>
+                            <div class="form__submit-wrapper">
+                                <input type="submit" value="Записаться >>">
+                            </div>
+                        </div>
                     </div>
-         </div>
-        </section> 
-
-         <section  class="statistic card-doctor">
-            
-              <div class="statistic__wrapper content-wrapper">
-                <div class="statistic__block">
-                    <p class="statistic__number">15 лет</p>
-                    <p class="statistic__text">Стаж работы</p>
-                </div>
-                <div class="statistic__block">
-                    <p class="statistic__number">5</p>
-                    <p class="statistic__text">Сертификаты</p>
-                </div>
-                <div class="statistic__block">
-                    <p class="statistic__number">3</p>
-                    <p class="statistic__text">Отзывы</p>
-                </div>
-
-            </div> 
-       
-         </section> 
- 
+              </div>
+            </form>
+        </div>
+          </div>
+        </div>
+      </section> 
          
-         <section  class="column2 card-doctor">
-            <h2 class="column2__title">Светланова Ирина Ивановна</h2>
-            <div class="content-wrapper  column2__wrapper">
-                <div class="column2__left">
 
-                     
-                           <img  src="img/vrach-card.png" alt="">
-                     
-    
-                 </div>
-                  
-                <div class="column2__right">
-                     <p class="column2__name">Светланова Ирина Ивановна</p>
-                    <p>Должность: врач<br>
-                    Специализация: стоматолог-терапевт, гигиенист, пародонтолог<br>
-                    Категория: высшая<br>
-                    <br>     
-                    Окончила Воронежский государственный медицинский университет, квалификация: «врач-стоматолог» по специальности «стоматология». Сертифицированный доктор в терапевтической стоматологии.<br>
-                    <br>
-                    Специалист в области эндодонтического лечения. Профессионал в терапии и пародонтологии. Постоянно приобретает новые умения и навыки в работе.<br>
-                    <br>
-                    Внимание каждому пациенту и создание максимально комфортных условий лечения – вот основные принципы работы доктора.</p>
-                </div>
-            </div>
-         </section>
+      <!--     <section class="price-list content-wrapper">
+            <h2 class="price-list__title">Цены</h2>
+
+          </section> -->
+            <section class="price-block">
+            <div class="content-wrapper">
+                <h2 class="price-block__title">Стоимость услуг</h2>
+                <div class="price-block__wrapper">
+                        <table class="price-block__table">
+                            <tr class="price-block__row-title">
+                                <th class="price-block__column1 price-block__title1 ">Услуга</th>
+                                <th class="price-block__title2">Описание</th> 
+                                <th class="price-block__title3">Стоимость</th>
+                            </tr> <!--ряд с ячейками заголовков-->
+                            <tr class="price-block__row">
+                                <td class="price-block__column1">Лечение кариеса</td>
+                                <td class="price-block__column2">Анестезия, изоляция, формирование полости, постановка пломбы из композитных материалов, шлифовка и полировка, осмотры</td>
+                                <td class="price-block__column3">от 4 160 ₽</td>
+                            </tr> <!--ряд с ячейками тела таблицы-->
+                             <tr class="price-block__row">
+                                <td class="price-block__column1">Реставрация зуба</td>
+                                <td class="price-block__column2">Анестезия, изоляция, формирование полости, постановка пломбы из композитных материалов, шлифовка и полировка, осмотры</td>
+                                <td class="price-block__column3">от 7 000 ₽</td>
+                            </tr> <!--ряд с ячейками тела таблицы-->
+                            <tr class="price-block__row">
+                                <td class="price-block__column1">Лечение<br> периодонтита</td>
+                                <td class="price-block__column2">Анестезия, изоляция, формирование полости, постановка пломбы из композитных материалов, шлифовка и полировка, осмотры</td>
+                                <td class="price-block__column3">от 7 000 ₽</td>
+                            </tr> <!--ряд с ячейками тела таблицы-->
+                            <tr class="price-block__row">
+                                <td class="price-block__column1">Лечение <br>периодонтита</td>
+                                <td class="price-block__column2">Анестезия, изоляция, формирование полости, постановка пломбы из композитных материалов, шлифовка и полировка, осмотры</td>
+                                <td class="price-block__column3">от 7 000 ₽</td>
+                            </tr> <!--ряд с ячейками тела таблицы-->
+                       </table>
+                         
+               </div>
+             
+          </div>   
+        </section>
 
 
 
