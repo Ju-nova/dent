@@ -4937,56 +4937,81 @@ h2 {
             align-items: center;
   }
 }
-.reasons__left,
-.reasons__right {
+.reasons__block {
+  overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 470px;
   padding: 49px 48px 31px 100px;
+  position: relative;
   border-radius: 10px;
   background-color: #fff;
   -webkit-box-shadow: 0 0 27px rgba(192, 193, 193, 0.38);
           box-shadow: 0 0 27px rgba(192, 193, 193, 0.38);
 }
 @media (max-width: 1024px) {
-  .reasons__left,
-  .reasons__right {
+  .reasons__block {
     padding: 29px 28px 11px 80px;
   }
 }
 @media (max-width: 768px) {
-  .reasons__left,
-  .reasons__right {
+  .reasons__block {
     width: 350px;
-  }
-}
-@media (max-width: 426px) {
-  .reasons__left,
-  .reasons__right {
-    width: 100%;
-  }
-}
-@media (max-width: 426px) {
-  .reasons__left {
     margin-bottom: 20px;
   }
 }
-.reasons__left ul,
-.reasons__right ul {
+@media (max-width: 426px) {
+  .reasons__block {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.reasons__block img {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+}
+@media (max-width: 426px) {
+  .reasons__block img {
+    width: 70px;
+  }
+}
+.reasons__block ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.reasons__left ul li,
-.reasons__right ul li {
+.reasons__block ul li {
   position: relative;
   margin-bottom: 17px;
   font-size: 16px;
   font-weight: 400;
   color: #242424;
 }
-.reasons__left ul li:before,
-.reasons__right ul li:before {
+.reasons__doctors .reasons__block {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 44px 70px 54px 80px;
+  margin-bottom: 30px;
+}
+@media (max-width: 1024px) {
+  .reasons__doctors .reasons__block {
+    padding: 29px 80px 24px 60px;
+  }
+}
+@media (max-width: 426px) {
+  .reasons__doctors .reasons__block {
+    width: 95%;
+    padding: 29px 60px 24px 50px;
+  }
+}
+@media (max-width: 376px) {
+  .reasons__doctors .reasons__block {
+    width: 95%;
+    padding: 29px 20px 60px 50px;
+  }
+}
+#reasons .reasons__block ul li:before {
   position: absolute;
   left: -50px;
   display: block;
@@ -4996,73 +5021,56 @@ h2 {
   content: '';
 }
 @media (max-width: 768px) {
-  #reasons .reasons__right {
+  #reasons .reasons__block ul li:before {
+    left: -40px;
+  }
+}
+@media (max-width: 768px) {
+  #reasons .reasons__block-desktop {
     display: none;
   }
 }
 @media (max-width: 768px) {
-  #reasons .reasons__left {
+  #reasons .reasons__block {
     width: 90%;
   }
 }
 @media (max-width: 426px) {
-  #reasons .reasons__left {
+  #reasons .reasons__block {
     width: 95%;
   }
 }
-#reasons .reasons__left-tablet {
+#reasons .reasons__block-tablet {
   display: none;
 }
 @media (max-width: 768px) {
-  #reasons .reasons__left-tablet {
+  #reasons .reasons__block-tablet {
     display: block;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
-#doctors .reasons__left,
-#doctors .reasons__right {
+.reasons__company .reasons__block {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 44px 70px 54px 80px;
   margin-bottom: 30px;
 }
 @media (max-width: 1024px) {
-  #doctors .reasons__left,
-  #doctors .reasons__right {
+  .reasons__company .reasons__block {
     padding: 29px 80px 24px 60px;
   }
 }
 @media (max-width: 426px) {
-  #doctors .reasons__left,
-  #doctors .reasons__right {
+  .reasons__company .reasons__block {
     width: 95%;
     padding: 29px 60px 24px 50px;
   }
 }
 @media (max-width: 376px) {
-  #doctors .reasons__left,
-  #doctors .reasons__right {
+  .reasons__company .reasons__block {
     width: 95%;
-    padding: 29px 20px 60px 50px;
-  }
-}
-#doctors .reasons__left {
-  background-image: url(../img/teeth.png);
-  background-repeat: no-repeat;
-  background-position: right 0 bottom 0;
-}
-@media (max-width: 426px) {
-  #doctors .reasons__left {
-    background-size: 60px auto;
-  }
-}
-#doctors .reasons__right {
-  background-image: url(../img/like.png);
-  background-repeat: no-repeat;
-  background-position: right 0 bottom 0;
-}
-@media (max-width: 426px) {
-  #doctors .reasons__right {
-    background-size: 60px auto;
+    padding: 29px 20px 50px 50px;
   }
 }
 .reasons__block-text1 {
@@ -5098,66 +5106,6 @@ h2 {
     font-size: 14px;
     line-height: 18px;
   }
-}
-@media (max-width: 426px) {
-}
-#doctors .reasons__left,
-#doctors .reasons__right {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 44px 70px 54px 80px;
-}
-@media (max-width: 1024px) {
-  #doctors .reasons__left,
-  #doctors .reasons__right {
-    padding: 29px 80px 24px 60px;
-  }
-}
-@media (max-width: 426px) {
-  #doctors .reasons__left,
-  #doctors .reasons__right {
-    width: 95%;
-    padding: 29px 60px 24px 50px;
-  }
-}
-@media (max-width: 376px) {
-  #doctors .reasons__left,
-  #doctors .reasons__right {
-    width: 95%;
-    padding: 29px 20px 60px 50px;
-  }
-}
-#doctors .reasons__left {
-  background-image: url(../img/teeth.png);
-  background-repeat: no-repeat;
-  background-position: right 0 bottom 0;
-}
-@media (max-width: 426px) {
-  #doctors .reasons__left {
-    background-size: 60px auto;
-  }
-}
-#doctors .reasons__right {
-  background-image: url(../img/like.png);
-  background-repeat: no-repeat;
-  background-position: right 0 bottom 0;
-}
-@media (max-width: 426px) {
-  #doctors .reasons__right {
-    background-size: 60px auto;
-  }
-}
-#doctors.reasons__company .reasons__left {
-  background-image: url(../img/tooth5.png);
-}
-#doctors.reasons__company .reasons__right {
-  background-image: url(../img/icon-people.png);
-}
-#doctors.reasons__company .reasons__bottom-left {
-  background-image: url(../img/tooth6.png);
-}
-#doctors.reasons__company .reasons__bottom-right {
-  background-image: url(../img/tooth7.png);
 }
 .blue-block {
   background-color: #46c8d3;
