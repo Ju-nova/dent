@@ -1,6 +1,20 @@
 .services
 {
     border: 1px solid transparent;
+    position:relative;
+}
+.services__img{
+  position:absolute;
+  top:130px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius:100%;
+  width:427px;
+  height:427px;
+
+  @media (max-width: 1025px){
+     display:none;
+    }
 }
 .services__title
 {
@@ -17,11 +31,11 @@
     overflow: hidden;
     padding: 40px 0;
    border: 1px solid transparent;
-    background-image: url(../img/therapy__img.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    // background-image: url(../img/therapy__img.png);
+    // background-repeat: no-repeat;
+    // background-position: center;
     flex-wrap:wrap;
-    align-items:center;
+    align-items:flex-start;
     justify-content: space-between;
 
     @media (max-width: 1025px)
@@ -165,9 +179,10 @@ position:relative;
 {
    
     margin-top: 0px;
-    margin-bottom: 51px;
+    margin-bottom: 40px;
     position:relative;
     width: 50%;
+    min-height:48px;
 
     
     @media (max-width: 1025px)
@@ -321,7 +336,7 @@ margin-bottom: 20px;
     }
 }
 .services__10 a img{
-  top:-20px;
+  top:-10px;
   left:200px;
   @media (max-width: 1025px)
     {

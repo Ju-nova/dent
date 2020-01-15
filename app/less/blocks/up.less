@@ -301,9 +301,9 @@ font-size: 16px;
 }
 
 .up__company .up__wrapper{
-	background-image:url(../img/img-16.png);
-	background-repeat:no-repeat;
-	background-position: right 0px top 0;
+	// background-image:url(../img/img-16.png);
+	// background-repeat:no-repeat;
+	// background-position: right 0px top 0;
 	padding:0px 670px 131px 0;
 	// margin-left: 0;
 	//margin-left: 175px;
@@ -356,7 +356,18 @@ font-size: 16px;
 }
 }
 
-
+.up__company .up__img{
+	
+	position: absolute;
+    z-index: 0;
+    right:0;
+    height: 100%;
+    overflow: hidden;
+    bottom:0;
+    @media (max-width:426px){
+height:auto;
+}
+}
 .up__news{
 	background-image:url(../img/background1.png);
 	background-position: left 0 top -600px;

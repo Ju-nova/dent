@@ -147,12 +147,13 @@
     height: 366px;
    cursor:pointer;
   position:relative;
-    background-image: url(../img/video__mask.png);
-    background-repeat: no-repeat;
+    // background-image: url(../img/video__mask.png);
+    // background-repeat: no-repeat;
     &:before{
         content:'';
         display: block;
         position:absolute;
+        z-index: 2;
         width:134px;
         height:134px;
         background-image:url(../img/icon__play.png);
@@ -178,6 +179,18 @@
     height:212px;
  
 }   
+}
+.video__mask img{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:0;
+    @media (max-width: 1025px){
+     top:20px;   
+    }
+    @media (max-width: 426px){
+     top:0px;   
+    }
 }
 .video__mask:hover:before{
 transform: scale(1.2)
