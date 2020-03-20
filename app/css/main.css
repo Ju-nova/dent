@@ -1778,6 +1778,12 @@ input:required {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+.tooltip.error-text {
+  margin-bottom: 15px;
+}
+.error-text {
+  color: #B50000;
+}
 h2 {
   margin: 0;
   padding: 0;
@@ -4403,6 +4409,7 @@ h2 {
   -o-transition: none;
   transition: none;
   border: 9px solid #fff;
+  overflow: hidden;
 }
 @media (max-width: 426px) {
   #doctors .personal__av {
@@ -4725,6 +4732,9 @@ h2 {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+.img-round {
+  border-radius: 100%;
 }
 .up {
   background-image: url(../img/background1.png);
@@ -5652,6 +5662,18 @@ h2 {
 @media (max-width: 320px) {
   #appointment .form__wrap-contacts .form__checkbox label {
     width: 280px;
+  }
+}
+.blue__right-block-img__wrap {
+  width: 190px;
+  height: 190px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+@media (max-width: 1024px) {
+  .blue__right-block-img__wrap {
+    width: 140px;
+    height: 140px;
   }
 }
 .price-block {
